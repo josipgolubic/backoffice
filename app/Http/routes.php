@@ -24,8 +24,8 @@ Route::get('page', function() {
 	return "Hello";
 });
 
-Route::get('database', 'DBController@select_users');
-/*, function() {
+Route::get('database'//, 'DBController@select_users');
+, function() {
 	$results = DB::select('select * from users');
 	//DB::select('select * from users', array(10));
 
@@ -34,4 +34,4 @@ Route::get('database', 'DBController@select_users');
    echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
 }
 	    return var_dump($results);
-});*/
+});
