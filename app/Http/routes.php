@@ -26,5 +26,6 @@ Route::get('page', function() {
 
 Route::get('db', function() {
 	$results = DB::select('select * from users', array(10));
-	    return "Hello2";
+
+	    return var_dump($results);
 });
