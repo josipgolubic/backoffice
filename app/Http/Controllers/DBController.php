@@ -11,9 +11,6 @@ class DBController extends Controller {
 
 	public function select_users()
 	{
-		//echo "Variable: " . App::environment() . " ";
-		echo "Is local: " App::isLocal() . " ";
-		echo "Set to testing: " App::runningUnitTests() . " ";
 		$users = DB::table('users')->get();
 		if(DB::connection()->getDatabaseName())
 		{
