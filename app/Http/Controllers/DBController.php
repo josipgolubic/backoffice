@@ -5,16 +5,18 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use DB;
+
 class DBController extends Controller {
 
 	public function select_users()
 	{
-	//	$results = DB::select('select * from users');
-			/*if(DB::connection()->getDatabaseName())
-			{
-			   echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
-			}*/
-	    return "hello";//view('database', compact('results'));
+		$users = DB::table('users')->get();
+		if(DB::connection()->getDatabaseName())
+		{
+			echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
+		}
+	    return view('database', compact('users'));
 	}
 
 }
