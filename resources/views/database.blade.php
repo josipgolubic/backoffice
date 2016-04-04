@@ -7,13 +7,9 @@
 </head>
 
 <body>
-<!--
-	@foreach ($users as $user)
-		<div>
-			{{ $user->name; }}
-		</div>
-	@endforeach
--->
+
+
+
 Test
 </body>
 </html>
