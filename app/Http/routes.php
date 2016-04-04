@@ -23,3 +23,5 @@ Route::controllers([
 Route::get('page', function() {
 	return "Hello";
 });
+
+Route::get('db', 'DBController@testDatabase');

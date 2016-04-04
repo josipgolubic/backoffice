@@ -57,11 +57,11 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', env('OPENSHIFT_MYSQL_DB_HOST', 'localhost')),
+			'host'      => env('DB_HOST', env('OPENSHIFT_MYSQL_DB_HOST', '127.9.221.130')),
 			'port'      => env('DB_PORT', env('OPENSHIFT_MYSQL_DB_PORT', 3306)),
-			'database'  => env('DB_DATABASE', env('OPENSHIFT_APP_NAME', 'forge')),
-			'username'  => env('DB_USERNAME', env('OPENSHIFT_MYSQL_DB_USERNAME', 'forge')),
-			'password'  => env('DB_PASSWORD', env('OPENSHIFT_MYSQL_DB_PASSWORD', '')),
+			'database'  => env('DB_DATABASE', env('OPENSHIFT_APP_NAME', 'backoffice')),
+			'username'  => env('DB_USERNAME', env('OPENSHIFT_MYSQL_DB_USERNAME', 'admin8dIEpwD')),
+			'password'  => env('DB_PASSWORD', env('OPENSHIFT_MYSQL_DB_PASSWORD', 'EnYbTV4pYT8U')),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
