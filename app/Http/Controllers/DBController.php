@@ -10,10 +10,10 @@ class DBController extends Controller {
 	public function select_users()
 	{
 	//	$results = DB::select('select * from users');
-			if(DB::connection()->getDatabaseName())
+			/*if(DB::connection()->getDatabaseName())
 			{
 			   echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
-			}
+			}*/
 	    return "hello";//view('database', compact('results'));
 	}
 
