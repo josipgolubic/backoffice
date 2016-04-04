@@ -49,12 +49,12 @@ return [
 
 	'connections' => [
 
-		'sqlite' => [
+		/*'sqlite' => [
 			'driver'   => 'sqlite',
 			'database' => storage_path().'/database.sqlite3',
 			'prefix'   => '',
 		],
-
+*/
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', env('OPENSHIFT_MYSQL_DB_HOST', '127.9.221.130')),
@@ -66,7 +66,7 @@ return [
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 			'strict'    => false,
-		],
+		]/*,
 
 		'pgsql' => [
 			'driver'   => 'pgsql',
@@ -78,7 +78,7 @@ return [
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
-		]
+		]*/
 
 	],
 

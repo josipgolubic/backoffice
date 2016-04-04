@@ -25,7 +25,8 @@ Route::get('page', function() {
 });
 
 Route::get('db', function() {
-	$results = DB::select('select * from users', array(10));
+	$results = DB::select('select * from users');
+	//DB::select('select * from users', array(10));
 
 	if(DB::connection()->getDatabaseName())
 {
