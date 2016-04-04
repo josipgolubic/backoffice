@@ -27,5 +27,9 @@ Route::get('page', function() {
 Route::get('db', function() {
 	$results = DB::select('select * from users', array(10));
 
+	if(DB::connection()->getDatabaseName())
+{
+   echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
+}
 	    return var_dump($results);
 });
