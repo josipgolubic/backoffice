@@ -24,4 +24,7 @@ Route::get('page', function() {
 	return "Hello";
 });
 
-Route::get('db', 'DBController@testDatabase');
+Route::get('db', function() {
+	$results = DB::select('select * from users', array(10));
+	    return "Hello2";
+});
