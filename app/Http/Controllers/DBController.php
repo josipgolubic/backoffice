@@ -9,7 +9,7 @@ class WelcomeController extends Controller {
 	    // Make call to application...
 
 	    $results = DB::select('select * from users', array(10));
-	    echo $results;
+	    return "Hello2";
 	    //view('welcome', compact('results'));
 	}
 
