@@ -1,17 +1,20 @@
 <?php namespace App\Http\Controllers;
 
-class WelcomeController extends Controller {
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
+use Illuminate\Http\Request;
 
+class DBController extends Controller {
 
-	public function testDatabase()
+	public function select_users()
 	{
-	    // Make call to application...
-
-	    //$results = DB::select('select * from users', array(10));
-	    return "Hello2";
-	    //view('welcome', compact('results'));
+		$results = DB::select('select * from users');
+			if(DB::connection()->getDatabaseName())
+			{
+			   echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
+			}
+	    return view('database', compact('results'));
 	}
 
 }
-
