@@ -16,7 +16,8 @@ class DBController extends Controller {
 		{
 			echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
 		}*/
-	    return view('database', compact('users'));
+		return $users;
+	    //return view('database', compact('users'));
 	}
 
 }
