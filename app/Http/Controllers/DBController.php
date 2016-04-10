@@ -8,11 +8,7 @@ use Illuminate\Http\Request;
 use DB;
 
 class DBController extends Controller {
-	public function __construct()
-    {
-  	  $this->middleware('auth');
-    }
-    
+
 	public function select_users()
 	{
 		$users = DB::table('users')->get();
