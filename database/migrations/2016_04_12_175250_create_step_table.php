@@ -15,7 +15,7 @@ class CreateStepTable extends Migration {
 		Schema::create('TABLE_STEP', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('KEY_NODE_ID')->unique();
+			$table->integer('KEY_NODE_ID');
 			$table->integer('KEY_NEIGHBOR_ID');
 			$table->integer('KEY_PATH_COST');
 			$table->integer('KEY_STEP_ORDER');
