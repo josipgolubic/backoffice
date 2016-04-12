@@ -15,7 +15,7 @@ class CreateNodeTable extends Migration {
 		Schema::create('TABLE_NODE', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('KEY_NODE_ID');
+			$table->integer('KEY_NODE_ID')->unique();
 			$table->integer('KEY_XML_INFO_ID');
 			$table->string('KEY_BUILDING_DESCRIPTION');
 			$table->integer('KEY_FLOOR_LEVEL');
@@ -26,7 +26,6 @@ class CreateNodeTable extends Migration {
 			$table->integer('KEY_NODE_X_POSITION');
 			$table->integer('KEY_NODE_Y_POSTIION');
 			$table->string('KEY_NODE_TYPE');
-			$table->timestamps();
 		});
 	}
 
