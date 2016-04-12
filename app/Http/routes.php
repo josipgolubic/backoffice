@@ -21,7 +21,7 @@ Route::controllers([
 ]);
 
 Route::get('page', function() {
-	return "Hello";
+	return "Hello!";
 });
 
 Route::get('database', ['middleware' => 'cors'//, 'DBController@select_users');
