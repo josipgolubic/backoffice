@@ -25,6 +25,7 @@ class CreateNodeTable extends Migration {
 			$table->string('KEY_NODE_DESCRIPTION');
 			$table->integer('KEY_NODE_X_POSITION');
 			$table->integer('KEY_NODE_Y_POSTIION');
+			$table->string('KEY_NODE_TYPE');
 			$table->timestamps();
 		});
 	}
