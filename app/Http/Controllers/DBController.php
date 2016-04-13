@@ -9,7 +9,7 @@ use DB;
 
 class DBController extends Controller {
 
-	public function select_users()
+	public function display()
 	{
 		$table_xml_info = DB::table('TABLE_XML_INFO')->get();
 		return $table_xml_info;
