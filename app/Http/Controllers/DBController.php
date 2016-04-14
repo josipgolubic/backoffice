@@ -15,7 +15,7 @@ class DBController extends Controller {
 		$table_node = json_encode(DB::table('TABLE_NODE')->get());
 		$table_step = json_encode(DB::table('TABLE_STEP')->get());
 
-		return '"{table_xml_info": ' . $table_xml_info . "," . '"table_node": ' . $table_node . "," . '"table_step": ' . $table_step . '}';
+		return '{"table_xml_info": ' . $table_xml_info . "," . '"table_node": ' . $table_node . "," . '"table_step": ' . $table_step . '}';
 		/*if(DB::connection()->getDatabaseName())
 		{
 			echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
