@@ -16,7 +16,7 @@ class DBController extends Controller {
 		//$table_node = DB::table('TABLE_NODE')->get();
 		//$table_step = DB::table('TABLE_STEP')->get();
 		//$
-		return "Hi";//'"table_xml_info": ' . $table_xml_info . "\r\n" . '"table_node": ' . $table_node . "\r\n" . '"table_step": ' . $table_step;
+		return $results;//'"table_xml_info": ' . $table_xml_info . "\r\n" . '"table_node": ' . $table_node . "\r\n" . '"table_step": ' . $table_step;
 		/*if(DB::connection()->getDatabaseName())
 		{
 			echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
