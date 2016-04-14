@@ -11,7 +11,7 @@ class DBController extends Controller {
 
 	public function display()
 	{
-		$results = '"table_xml_info": ' . DB::table('TABLE_XML_INFO')->get();
+		$results = '"table_xml_info": ' . json_encode(DB::table('TABLE_XML_INFO')->get());
 		$table_xml_info = DB::table('TABLE_XML_INFO')->get();
 		//$table_node = DB::table('TABLE_NODE')->get();
 		//$table_step = DB::table('TABLE_STEP')->get();
