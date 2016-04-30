@@ -8,6 +8,7 @@
 				<div class="panel-heading">Add New</div>
 
 				<div class="panel-body">
+					<a href="{{ URL::route('users.index') }}">My button</a>
 				</div>
 			</div>
 		</div>
