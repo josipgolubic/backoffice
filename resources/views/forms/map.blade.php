@@ -7,16 +7,20 @@
 
 			<form method="POST" action="/map/1">
 				<div class="form-group">
-					Map version:<input type="text" name="MapVersion" class="form-control"></input>
+					Map version:
+					<input type="text" name="MapVersion" class="form-control"></input>
 					
 				</div>
 				<div class="form-group">
-					Map description:<input type="text" name="MapDescription" class="form-control"></input>
+					Map description:
+					<input type="text" name="MapDescription" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Add Map</button>
 				</div>
+
+				<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 			</form>
 		</div>
 	</div>
