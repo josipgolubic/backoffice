@@ -24,9 +24,7 @@ Route::get('page', function() {
 	return "Hello";
 });
 
-Route::get('map', function() {
-	return "Hello m8";
-});
+Route::get('map', array('uses' => 'HomeController@dindex', 'as' => 'map'));
 
 Route::get('database', ['middleware' => 'cors', 'uses' => 'DBController@display']);
 	/*, function() {
