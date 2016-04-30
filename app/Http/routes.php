@@ -24,7 +24,7 @@ Route::get('page', function() {
 	return "Hello";
 });
 
-Route::get('map', array('uses' => 'HomeController@dindex', 'as' => 'map'));
+Route::get('map', array('uses' => 'HomeController@showMapForm', 'as' => 'map'));
 
 Route::get('database', ['middleware' => 'cors', 'uses' => 'DBController@display']);
 	/*, function() {

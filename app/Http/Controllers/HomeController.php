@@ -33,9 +33,9 @@ class HomeController extends Controller {
 		return view('home');
 	}
 
-	public function dindex()
+	public function showMapForm()
 	{
-		return "HELLO MATE";
+		return view('forms.map');
 	}
 
 }
