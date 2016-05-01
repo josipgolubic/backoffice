@@ -8,12 +8,12 @@
 			<form method="POST" action="/map/1">
 				<div class="form-group">
 					<h4><small>Map:</small></h4>
-					<input type="text" name="Map" class="form-control"></input>
+					<select name="Map" class="form-control"></select>
 					
 				</div>
 				<div class="form-group">
 					<h4><small>Building:</small></h4>
-					<input type="text" name="Building" class="form-control"></input>
+					<select name="Building" class="form-control"></select>
 				</div>
 
 				<div class="form-group">
