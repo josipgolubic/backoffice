@@ -7,7 +7,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Add New</div>
 
-				<div class="panel-body">
+				<div class="panel-body col-md-10 col-md-offset-1">
 					<a href="{{ URL::route('map') }}">Map</a>
 					<a href="{{ URL::route('building') }}">Building</a>
 					<a href="{{ URL::route('floor') }}">Floor</a>

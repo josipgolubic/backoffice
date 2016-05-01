@@ -28,6 +28,7 @@
 
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Add Floor</button>
+					<a class="btn btn-default btn-close" href="{{ route('home') }}">Cancel</a>
 				</div>
 
 				<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
