@@ -23,7 +23,7 @@
 
 				<div class="form-group">
 					Type:
-					<select class="form-group" name="PositionType">
+					<select class="form-control" name="PositionType">
 						<option value="qrcode">QRCode</option>
 					  	<option value="stairs">Stairs</option>
 					  	<option value="elevator">Elevator</option>
