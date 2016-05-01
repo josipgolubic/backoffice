@@ -53,8 +53,8 @@ class HomeController extends Controller {
 		return view('forms.position');
 	}
 
-	public function showNeighborForm()
+	public function showRouteForm()
 	{
-		return view('forms.neighbor');
+		return view('forms.route');
 	}
 }

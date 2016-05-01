@@ -7,12 +7,12 @@
 
 			<form method="POST" action="/map/1">
 				<div class="form-group">
-					Map version:
+					<h4><small>Map version:</small></h4>
 					<input type="text" name="MapVersion" class="form-control"></input>
 					
 				</div>
 				<div class="form-group">
-					Map description:
+					<h4><small>Map description:</small></h4>
 					<input type="text" name="MapDescription" class="form-control"></input>
 				</div>
 

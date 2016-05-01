@@ -7,22 +7,22 @@
 
 			<form method="POST" action="/map/1">
 				<div class="form-group">
-					Map:
+					<h4><small>Map:</small></h4>
 					<input type="text" name="Map" class="form-control"></input>
 					
 				</div>
 				<div class="form-group">
-					Building:
+					<h4><small>Building:</small></h4>
 					<input type="text" name="Building" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Floor:
+					<h4><small>Floor:</small></h4>
 					<input type="text" name="Floor" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Type:
+					<h4><small>Type:</small></h4>
 					<select class="form-control" name="PositionType">
 						<option value="qrcode">QRCode</option>
 					  	<option value="stairs">Stairs</option>
@@ -31,7 +31,7 @@
 				</div>
 
 				<div class="form-group">
-					Position description:
+					<h4><small>Position description:</small></h4>
 					<input type="text" name="PositionDescription" class="form-control"></input>
 				</div>
 
