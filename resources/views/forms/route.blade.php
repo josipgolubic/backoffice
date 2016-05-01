@@ -44,7 +44,7 @@
 
 				<div class="form-group">
 					<h4><small>Set of steps:</small></h4>
-					<input type="text" name="StepSet" class="form-control"></input>
+					<select class="form-control" name="StepSet"></select>
 					<button type="submit" class="btn btn-info btn-block">Add Image</button>
 				</div>
 
