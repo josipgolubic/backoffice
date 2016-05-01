@@ -38,8 +38,8 @@
 
 				<div class="form-group">
 					Step:
-					<input type="text" name="Step" class="form-control"></input>
-					<button type="submit" class="btn btn-primary">Add Step</button>
+					<input type="text" name="Step" class="form-control" style="width: 80%;"></input>
+					<button type="submit" class="btn btn-primary" style="width: 20%;">Add Step</button>
 				</div>
 
 				<div class="form-group">
