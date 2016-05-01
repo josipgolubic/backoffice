@@ -38,4 +38,23 @@ class HomeController extends Controller {
 		return view('forms.map');
 	}
 
+	public function showBuildingForm()
+	{
+		return view('forms.building');
+	}
+
+	public function showFloorForm()
+	{
+		return view('forms.floor');
+	}
+
+	public function showPositionForm()
+	{
+		return view('forms.position');
+	}
+
+	public function showNeighborForm()
+	{
+		return view('forms.neighbor');
+	}
 }

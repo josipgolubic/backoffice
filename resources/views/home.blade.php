@@ -8,7 +8,11 @@
 				<div class="panel-heading">Add New</div>
 
 				<div class="panel-body">
-					<a href="{{ URL::route('map') }}">My button</a>
+					<a href="{{ URL::route('map') }}">Map</a>
+					<a href="{{ URL::route('building') }}">Building</a>
+					<a href="{{ URL::route('floor') }}">Floor</a>
+					<a href="{{ URL::route('position') }}">Position</a>
+					<a href="{{ URL::route('neighbor') }}">Neighbor</a>
 				</div>
 			</div>
 		</div>

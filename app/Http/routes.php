@@ -25,6 +25,10 @@ Route::get('page', function() {
 });
 
 Route::get('map', array('uses' => 'HomeController@showMapForm', 'as' => 'map'));
+Route::get('building', array('uses' => 'HomeController@showBuildingForm', 'as' => 'building'));
+Route::get('floor', array('uses' => 'HomeController@showFloorForm', 'as' => 'floor'));
+Route::get('position', array('uses' => 'HomeController@showPositionForm', 'as' => 'position'));
+Route::get('neighbor', array('uses' => 'HomeController@showNeighborForm', 'as' => 'neighbor'));
 
 Route::get('database', ['middleware' => 'cors', 'uses' => 'DBController@display']);
 	/*, function() {
