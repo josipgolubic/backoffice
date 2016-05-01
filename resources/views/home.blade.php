@@ -7,12 +7,12 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Add New</div>
 
-				<div class="panel-body col-md-10 col-md-offset-1">
-					<a href="{{ URL::route('map') }}">Map</a>
-					<a href="{{ URL::route('building') }}">Building</a>
-					<a href="{{ URL::route('floor') }}">Floor</a>
-					<a href="{{ URL::route('position') }}">Position</a>
-					<a href="{{ URL::route('neighbor') }}">Neighbor</a>
+				<div class="panel-body">
+					<a href="{{ URL::route('map') }}" class="btn btn-block">Map</a>
+					<a href="{{ URL::route('building') }}" class="btn btn-block">Building</a>
+					<a href="{{ URL::route('floor') }}" class="btn btn-block">Floor</a>
+					<a href="{{ URL::route('position') }}" class="btn btn-block">Position</a>
+					<a href="{{ URL::route('neighbor') }}" class="btn btn-block">Neighbor</a>
 				</div>
 			</div>
 		</div>
