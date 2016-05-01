@@ -7,45 +7,45 @@
 
 			<form method="POST" action="/map/1">
 				<div class="form-group">
-					Map:
+					<h4><small>Map:</small></h4>
 					<input type="text" name="Map" class="form-control"></input>
 					
 				</div>
 				<div class="form-group">
-					Building:
+					<h4><small>Building:</small></h4>
 					<input type="text" name="Building" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Floor:
+					<h4><small>Floor:</small></h4>
 					<input type="text" name="Floor" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Origin:
+					<h4><small>Origin:</small></h4>
 					<input type="text" name="Origin" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Destination:
+					<h4><small>Destination:</small></h4>
 					<input type="text" name="Destination" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Path cost:
+					<h4><small>Path cost:</small></h4>
 					<input type="text" name="PathCost" class="form-control"></input>
 				</div>
 
 				<div class="form-group">
-					Step:
-					<input type="text" name="Step" class="form-control" style="width: 80%;"></input>
-					<button type="submit" class="btn btn-primary" style="width: 20%;">Add Step</button>
+					<h4><small>Step:</small></h4>
+					<input type="text" name="Step" class="form-control" style="width: 80%; display: inline;"></input>
+					<button type="submit" class="btn btn-primary" style="width: 20%; display: inline;">Add Step</button>
 				</div>
 
 				<div class="form-group">
-					Set of steps:
-					<input type="text" name="StepSet" class="form-control"></input>
-					<button type="submit" class="btn btn-primary">Add Image</button>
+					<h4><small>Set of steps:</small></h4>
+					<input type="text" name="StepSet" class="form-control" style="width: 80%; display: inline;"></input>
+					<button type="submit" class="btn btn-primary" style="width: 20%; display: inline;">Add Image</button>
 				</div>
 
 				<div class="form-group">
