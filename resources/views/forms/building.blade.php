@@ -18,7 +18,7 @@
 
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Add Building</button>
-					<a class="btn btn-default btn-close" href="{{ route('home') }}">Cancel</a>
+					<a class="btn btn-danger btn-close" href="{{ route('home') }}">Cancel</a>
 				</div>
 
 				<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
