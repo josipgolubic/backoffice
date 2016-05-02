@@ -23,8 +23,7 @@
 				<div class="panel-heading">Add New</div>
 				<div class="panel-body">
 					@foreach ($maps as $map)
-						{{ $i = 0; }}
-    					<p> {{ $i . $map->KEY_MAP_DESCRIPTION }}</p>
+    					<p> {{ $map->KEY_MAP_DESCRIPTION }}</p>
 					@endforeach
 				</div>
 			</div>
