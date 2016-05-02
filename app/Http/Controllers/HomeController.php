@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use DB;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,7 +32,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		$maps = table('TABLE_XML_INFO')->get();
+		return view('home', compact('maps'));
 	}
 
 	public function showMapForm()
