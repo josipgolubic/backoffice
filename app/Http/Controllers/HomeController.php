@@ -32,7 +32,7 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		$maps = table('TABLE_XML_INFO')->get();
+		$maps = DB::table('TABLE_XML_INFO')->get();
 		return view('home', compact('maps'));
 	}
 
