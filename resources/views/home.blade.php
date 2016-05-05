@@ -23,7 +23,7 @@
 				<div class="panel-heading">Existing Maps</div>
 				<div class="panel-body">
 					@foreach ($maps as $map)
-						<ul class="list-group">
+						<ul class="list-inline">
 	    					<a href="/map/{{ $map->id }}" class="list-group-item"> {{ $map->KEY_MAP_DESCRIPTION }}</a>
 	    					<a href="{{ URL::route('route') }}" class="btn btn-danger">Delete</a>
 	    				</ul>
