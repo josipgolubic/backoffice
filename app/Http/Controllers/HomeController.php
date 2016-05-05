@@ -60,4 +60,9 @@ class HomeController extends Controller {
 	{
 		return view('forms.route');
 	}
+
+	public function show($id)	
+	{
+		return $id;
+	}
 }
