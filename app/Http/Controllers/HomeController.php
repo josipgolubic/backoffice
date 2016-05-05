@@ -64,6 +64,6 @@ class HomeController extends Controller {
 	public function show($id)	
 	{
 		$map = DB::table('TABLE_XML_INFO')->where('id', $id)->first();
-		return $map;
+		return $map->KEY_MAP_DESCRIPTION;
 	}
 }
