@@ -20,11 +20,12 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Add New</div>
+				<div class="panel-heading">Existing Maps</div>
 				<div class="panel-body">
 					@foreach ($maps as $map)
 						<ul class="list-group">
 	    					<a href="/map/{{ $map->id }}" class="list-group-item"> {{ $map->KEY_MAP_DESCRIPTION }}</a>
+	    					<a href="{{ URL::route('route') }}" class="btn btn-danger">Delete</a>
 	    				</ul>
 					@endforeach
 				</div>
