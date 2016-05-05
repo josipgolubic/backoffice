@@ -23,7 +23,7 @@
 				<div class="panel-heading">Add New</div>
 				<div class="panel-body">
 					@foreach ($maps as $map)
-    					<p> {{ $map->KEY_MAP_DESCRIPTION }}</p>
+    					<a href="/map/{{ $map->id }}"> {{ $map->KEY_MAP_DESCRIPTION }}</a>
 					@endforeach
 				</div>
 			</div>
