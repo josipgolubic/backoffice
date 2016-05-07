@@ -25,10 +25,11 @@
 
 						<div class="form-group">
 							<h4><small>Map:</small></h4>
-							<select name="Map" class="form-control"></select>
-							@foreach ($maps as $map)
-								<option value="{{ $map->id }}">{{ $map->KEY_MAP_DESCRIPTION }}</option>
-							@endforeach	
+							<select class="form-control" name="Map">
+								@foreach ($maps as $map)
+									<option value="{{ $map->id }}">{{ $map->KEY_MAP_DESCRIPTION }}</option>
+								@endforeach	
+							</select>
 						</div>
 
 						<div class="form-group">
