@@ -11,9 +11,18 @@
 	</div>
 
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-
-			<div class="panel-body">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">Existing Maps</div>
+				<div class="panel-body">
+					@foreach ($maps as $map)
+						<ul class="list-inline">
+	    					<a href="/map/{{ $map->id }}" class="list-group-item" style="display:inline; width:90%;"> {{ $map->KEY_MAP_DESCRIPTION }}</a>
+	    					<a href="{{ URL::route('route') }}" class="btn btn-danger" style="width:10%;">Delete</a>
+	    				</ul>
+					@endforeach
+				</div>
+				<div class="panel-body">
 					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addmap">Add New Map</button>
   					<div id="addmap" class="collapse">
   						<div class="row">
@@ -42,5 +51,8 @@
 						</div>
   					</div>
 				</div>
+			</div>
+		</div>
+	</div>
 
 @stop
