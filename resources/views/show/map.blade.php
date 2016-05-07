@@ -4,7 +4,7 @@
 
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<h2>{{ $map->KEY_MAP_DESCRIPTION }}</h2>
+			<h2>{{ $singleMap->KEY_MAP_DESCRIPTION }}</h2>
 		</div>
 	</div>
 

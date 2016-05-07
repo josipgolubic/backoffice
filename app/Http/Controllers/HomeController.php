@@ -65,8 +65,9 @@ class HomeController extends Controller {
 	public function showMap($id)	
 	{
 		//map->KEY_MAP_DESCRIPTION;
-		$map = DB::table('TABLE_XML_INFO')->where('id', $id)->first();
-		return view('show.map', compact('map'));
+		$singleMap = DB::table('TABLE_XML_INFO')->where('id', $id)->first();
+		$maps = DB::table('TABLE_XML_INFO')->get();
+		return view('show.map', compact('singleMap', 'maps'));
 	}
 
 	public function storeMap(Request $request)
