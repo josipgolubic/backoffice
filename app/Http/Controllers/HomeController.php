@@ -71,6 +71,12 @@ class HomeController extends Controller {
 
 	public function store(Request $request)
 	{
-		return $request->all();
+		$id = DB::table('TABLE_XML_INFO')->insertGetId(
+    		['KEY_MAP_VERSION' => $request->MapVersion, 
+    		 'KEY_MAP_DESCRIPTION' => $request->MapDescription,
+    		 'KEY_XML_HASH' => $request->_token]
+		);
+
+	//	return $request->all();
 	}
 }

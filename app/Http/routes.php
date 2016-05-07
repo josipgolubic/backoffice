@@ -31,7 +31,7 @@ Route::get('position', array('uses' => 'HomeController@showPositionForm', 'as' =
 Route::get('route', array('uses' => 'HomeController@showRouteForm', 'as' => 'route'));
 
 Route::get('map/{id}', 'HomeController@show');
-Route::post('map/add/{map}', 'HomeController@store');
+Route::post('map/add', 'HomeController@store');
 
 Route::get('database', ['middleware' => 'cors', 'uses' => 'DBController@display']);
 	/*, function() {

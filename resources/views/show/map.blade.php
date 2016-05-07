@@ -14,7 +14,7 @@
 		<div class="col-md-6 col-md-offset-3">
 			<h3>Add a New Map</h3>
 
-			<form method="POST" action="/map/add/{{ $map->id }}">
+			<form method="POST" action="/map/add">
 				<div class="form-group">
 					<h4><small>Map version:</small></h4>
 					<input type="text" name="MapVersion" class="form-control"></input>
