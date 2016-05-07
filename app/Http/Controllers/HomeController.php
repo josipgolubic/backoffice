@@ -67,4 +67,9 @@ class HomeController extends Controller {
 		$map = DB::table('TABLE_XML_INFO')->where('id', $id)->first();
 		return view('show.map', compact('map'));
 	}
+
+	public function store(Request $request)
+	{
+		return $request->all();
+	}
 }
