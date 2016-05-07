@@ -25,12 +25,16 @@ Route::get('page', function() {
 });
 
 Route::get('map', array('uses' => 'HomeController@showMapForm', 'as' => 'map'));
+/*
 Route::get('building', array('uses' => 'HomeController@showBuildingForm', 'as' => 'building'));
 Route::get('floor', array('uses' => 'HomeController@showFloorForm', 'as' => 'floor'));
 Route::get('position', array('uses' => 'HomeController@showPositionForm', 'as' => 'position'));
 Route::get('route', array('uses' => 'HomeController@showRouteForm', 'as' => 'route'));
+*/
 
-Route::get('map/{id}', 'HomeController@show');
+Route::get('map/{id}', 'HomeController@showMap');
+//Route::get('node/{id}', 'HomeController@showMap');
+
 Route::post('map/add', 'HomeController@storeMap');
 Route::post('node/add', 'HomeController@storeNode');
 

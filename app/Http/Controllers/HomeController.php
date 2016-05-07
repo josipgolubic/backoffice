@@ -62,7 +62,7 @@ class HomeController extends Controller {
 		return view('forms.route');
 	}
 
-	public function show($id)	
+	public function showMap($id)	
 	{
 		//map->KEY_MAP_DESCRIPTION;
 		$map = DB::table('TABLE_XML_INFO')->where('id', $id)->first();
