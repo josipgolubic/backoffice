@@ -10,11 +10,11 @@
 		</div>
 	</div>
 
-	<div class="panel-body">
-		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addnode">Add New Node</button>
-	  	<div id="addnode" class="collapse">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addnode">Add New Node</button>
+		  	<div id="addnode" class="collapse">
+				<div class="panel-body">
 					<h3>Add a New Node</h3>
 
 					<form method="POST" action="/node/add">
