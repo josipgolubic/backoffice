@@ -27,7 +27,7 @@
 							<h4><small>Map:</small></h4>
 							<select name="Map" class="form-control"></select>
 							@foreach ($maps as $map)
-								<option>{{ $map->KEY_MAP_DESCRIPTION }}</option>
+								<option value="{{ $map->id }}">{{ $map->KEY_MAP_DESCRIPTION }}</option>
 							@endforeach	
 						</div>
 
