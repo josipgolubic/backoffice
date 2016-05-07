@@ -69,7 +69,7 @@ class HomeController extends Controller {
 		return view('show.map', compact('map'));
 	}
 
-	public function store(Request $request)
+	public function storeMap(Request $request)
 	{
 		$id = DB::table('TABLE_XML_INFO')->insertGetId(
     		['KEY_MAP_VERSION' => $request->MapVersion, 
@@ -77,6 +77,43 @@ class HomeController extends Controller {
     		 'KEY_XML_HASH' => $request->_token]
 		);
 
+		return redirect('home');
+
 	//	return $request->all();
+	}
+
+	public function storeNode(Request $request)
+	{
+/*
+		<!--
+			$table->increments('id');
+			$table->integer('KEY_NODE_ID')->unique();
+			$table->integer('KEY_XML_INFO_ID'); 1
+			$table->string('KEY_BUILDING_DESCRIPTION');
+			$table->integer('KEY_FLOOR_LEVEL');
+			$table->string('KEY_FLOOR_DESCRIPTION');
+			$table->integer('KEY_FLOOR_LENGTH');
+			$table->integer('KEY_FLOOR_WIDTH');
+			$table->string('KEY_NODE_DESCRIPTION');
+			$table->integer('KEY_NODE_X_POSITION');
+			$table->integer('KEY_NODE_Y_POSTIION');
+			$table->string('KEY_NODE_TYPE');
+-->
+*/
+		$id = DB::table('TABLE_NODE')->insertGetId(
+    		['KEY_NODE_ID' => $request->NodeID, 
+    		 'KEY_XML_INFO_ID' => 1,
+    		 'KEY_BUILDING_DESCRIPTION' => $request->BuildingDescription,
+    		 'KEY_FLOOR_LEVEL' => $request->FloorLevel,
+    		 'KEY_FLOOR_DESCRIPTION' => $request->FloorDescription,
+    		 'KEY_FLOOR_LENGTH' => $request->FloorLength,
+    		 'KEY_FLOOR_WIDTH' => $request->FloorWidth,
+    		 'KEY_NODE_DESCRIPTION' => $request->NodeDescription,
+    		 'KEY_NODE_X_POSITION' => $request->NodeX,
+    		 'KEY_NODE_Y_POSTIION' => $request->NodeY,
+    		 'KEY_NODE_TYPE' => $request->NodeType]
+		);
+
+		return redirect('home');
 	}
 }
