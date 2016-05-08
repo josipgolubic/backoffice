@@ -85,22 +85,6 @@ class HomeController extends Controller {
 
 	public function storeNode(Request $request)
 	{
-/*
-		<!--
-			$table->increments('id');
-			$table->integer('KEY_NODE_ID')->unique();
-			$table->integer('KEY_XML_INFO_ID'); 1
-			$table->string('KEY_BUILDING_DESCRIPTION');
-			$table->integer('KEY_FLOOR_LEVEL');
-			$table->string('KEY_FLOOR_DESCRIPTION');
-			$table->integer('KEY_FLOOR_LENGTH');
-			$table->integer('KEY_FLOOR_WIDTH');
-			$table->string('KEY_NODE_DESCRIPTION');
-			$table->integer('KEY_NODE_X_POSITION');
-			$table->integer('KEY_NODE_Y_POSTIION');
-			$table->string('KEY_NODE_TYPE');
--->
-*/
 		$id = DB::table('TABLE_NODE')->insertGetId(
     		['KEY_NODE_ID' => $request->NodeID, 
     		 'KEY_XML_INFO_ID' => 1,
@@ -113,6 +97,36 @@ class HomeController extends Controller {
     		 'KEY_NODE_X_POSITION' => $request->NodeX,
     		 'KEY_NODE_Y_POSTIION' => $request->NodeY,
     		 'KEY_NODE_TYPE' => $request->NodeType]
+		);
+
+		return redirect('home');
+	}
+
+	public function showStepForm($id)	
+	{
+		$steps = DB::table('TABLE_STEP')->get();
+		$nodes = DB::table('TABLE_NODE')->get();
+		return view('show.step', compact('steps', 'nodes'));
+	}
+
+	public function storeStep(Request $request)
+	{
+		/*
+			$table->increments('id');
+			$table->integer('KEY_NODE_ID');
+			$table->integer('KEY_NEIGHBOUR_ID');
+			$table->integer('KEY_PATH_COST');
+			$table->integer('KEY_STEP_ORDER');
+			$table->string('KEY_STEP_IMAGE');
+			$table->string('KEY_STEP_DESCRIPTION');
+		*/
+		$id = DB::table('TABLE_STEP')->insertGetId(
+    		['KEY_NODE_ID' => $request->StartNode, 
+    		 'KEY_NEIGHBOUR_ID' => $request->EndNode,
+    		 'KEY_PATH_COST' => $request->PathCost,
+    		 'KEY_STEP_ORDER' => $request->StepOrder,
+    		 'KEY_STEP_IMAGE' => $request->StepImage,
+    		 'KEY_STEP_DESCRIPTION' => $request->StepDescription,]
 		);
 
 		return redirect('home');

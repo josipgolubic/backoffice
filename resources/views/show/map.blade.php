@@ -64,7 +64,7 @@
 						</div>
 						
 						<div class="form-group">
-							<button type="submit" class="btn btn-primary">Add Position</button>
+							<button type="submit" class="btn btn-primary">Add Node</button>
 							<a class="btn btn-danger btn-close" href="{{ route('home') }}">Cancel</a>
 						</div>
 

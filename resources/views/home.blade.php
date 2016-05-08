@@ -24,8 +24,7 @@
 				<div class="panel-body">
 					@foreach ($maps as $map)
 						<ul class="list-inline">
-	    					<a href="/map/{{ $map->id }}" class="list-group-item" style="display:inline; width:90%;"> {{ $map->KEY_MAP_DESCRIPTION }}</a>
-	    					<a href="{{ URL::route('route') }}" class="btn btn-danger" style="width:10%;">Delete</a>
+	    					<a href="/map/{{ $map->id }}" class="list-group-item"> {{ $map->KEY_MAP_DESCRIPTION }}</a>
 	    				</ul>
 					@endforeach
 				</div>
@@ -57,6 +56,9 @@
 							</div>
 						</div>
   					</div>
+				</div>
+				<div class="panel-body">
+					<a href="{{ URL::route('step') }}" class="btn btn-default btn-block">Route</a>
 				</div>
 			</div>
 		</div>

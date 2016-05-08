@@ -31,10 +31,12 @@ Route::get('position', array('uses' => 'HomeController@showPositionForm', 'as' =
 Route::get('route', array('uses' => 'HomeController@showRouteForm', 'as' => 'route'));
 
 Route::get('map/{id}', 'HomeController@showMap');
+Route::get('step', array('uses' => 'HomeController@showStepForm', 'as' => 'step');
 //Route::get('node/{id}', 'HomeController@showMap');
 
 Route::post('map/add', 'HomeController@storeMap');
 Route::post('node/add', 'HomeController@storeNode');
+Route::post('step/add', 'HomeController@storeStep');
 
 Route::get('database', ['middleware' => 'cors', 'uses' => 'DBController@display']);
 	/*, function() {
