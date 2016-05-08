@@ -6,7 +6,7 @@
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel-body">
 				<h2>{{ $singleMap->KEY_MAP_DESCRIPTION }}</h2>
-				<a class="btn btn-primary btn-close" href="{{ route('map/edit/'$singleMap->id) }}">Cancel</a>
+				<a class="btn btn-primary btn-close" href="map/edit/{{ $singleMap->id }}">Cancel</a>
 			</div>
 		</div>
 	</div>
