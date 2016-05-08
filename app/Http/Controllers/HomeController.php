@@ -89,12 +89,14 @@ class HomeController extends Controller {
 		return view('edit.map', compact('map'));
 	}
 
-	public function updateMap(Request $request)
-	{/*
+	public function updateMap(Request $request, $id)
+	{
 		DB::table('TABLE_XML_INFO')
-            ->where('id', $request->id)
-            ->update(['votes' => 1]);*/
-            return $request->all();
+            ->where('id', $id)
+            ->update(['KEY_MAP_VERSION' => $request->MapVersion, 
+    		 'KEY_MAP_DESCRIPTION' => $request->MapDescription,
+    		 'KEY_XML_HASH' => $request->_token]);
+            return redirect('home');
 	}
 
 	public function storeNode(Request $request)
