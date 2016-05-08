@@ -83,6 +83,12 @@ class HomeController extends Controller {
 	//	return $request->all();
 	}
 
+	public function editMap($id)
+	{
+		$map = DB::table('TABLE_XML_INFO')->where('id', $id)->first();
+		return view('edit.map', compact('map'));
+	}
+
 	public function storeNode(Request $request)
 	{
 		$id = DB::table('TABLE_NODE')->insertGetId(
@@ -102,6 +108,12 @@ class HomeController extends Controller {
 		return redirect('home');
 	}
 
+	public function editNode(Request $request)
+	{
+		$node = DB::table('TABLE_NODE')->where('id', $id)->first();
+		return view('edit.node', compact('node'));
+	}
+
 	public function showStepForm()	
 	{
 		$steps = DB::table('TABLE_STEP')->get();
@@ -111,15 +123,6 @@ class HomeController extends Controller {
 
 	public function storeStep(Request $request)
 	{
-		/*
-			$table->increments('id');
-			$table->integer('KEY_NODE_ID');
-			$table->integer('KEY_NEIGHBOUR_ID');
-			$table->integer('KEY_PATH_COST');
-			$table->integer('KEY_STEP_ORDER');
-			$table->string('KEY_STEP_IMAGE');
-			$table->string('KEY_STEP_DESCRIPTION');
-		*/
 		$id = DB::table('TABLE_STEP')->insertGetId(
     		['KEY_NODE_ID' => $request->StartNode, 
     		 'KEY_NEIGHBOUR_ID' => $request->EndNode,
@@ -130,5 +133,11 @@ class HomeController extends Controller {
 		);
 
 		return redirect('home');
+	}
+
+	public function editStep(Request $request)
+	{
+		$step = DB::table('TABLE_STEP')->where('id', $id)->first();
+		return view('edit.step', compact('step'));
 	}
 }

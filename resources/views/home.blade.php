@@ -58,7 +58,7 @@
   					</div>
 				</div>
 				<div class="panel-body">
-					<a href="{{ URL::route('step') }}" class="btn btn-default btn-block">Route</a>
+					<a href="{{ URL::route('step') }}" class="btn btn-default btn-block">Add Step</a>
 				</div>
 			</div>
 		</div>

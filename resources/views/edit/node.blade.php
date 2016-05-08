@@ -2,21 +2,11 @@
 
 @section('content')
 <div class="container">
-	<div class="row">
+<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel-body">
-				<h2>{{ $singleMap->KEY_MAP_DESCRIPTION }}</h2>
-				<a class="btn btn-primary btn-close" href="{{ route('map/edit/$singleMap->id') }}">Cancel</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<div class="panel-body">
-				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addnode">Add New Node</button>
-				<a class="btn btn-danger btn-close" href="{{ route('home') }}">Cancel</a>
-			  	<div id="addnode" class="collapse">
+				<button type="button" class="btn btn-info">Add New Node</button>
+				<a class="btn btn-danger btn-close" href="{{ route('deleteMap') }}">Cancel</a>
 					<h3>Add a New Node</h3>
 
 					<form method="POST" action="/node/add">
@@ -75,6 +65,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
-@stop
