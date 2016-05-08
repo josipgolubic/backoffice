@@ -89,6 +89,14 @@ class HomeController extends Controller {
 		return view('edit.map', compact('map'));
 	}
 
+	public function updateMap(Request $request)
+	{/*
+		DB::table('TABLE_XML_INFO')
+            ->where('id', $request->id)
+            ->update(['votes' => 1]);*/
+            return $request->all();
+	}
+
 	public function storeNode(Request $request)
 	{
 		$id = DB::table('TABLE_NODE')->insertGetId(
