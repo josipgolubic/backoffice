@@ -7,7 +7,7 @@
 			<div class="panel-body">
 				<h2>{{ $singleMap->KEY_MAP_DESCRIPTION }}</h2>
 				<a class="btn btn-warning" href="edit/{{ $singleMap->id }}">Edit</a>
-				<form method="POST" action="deletemap/{{ $singleMap->id }}">
+				<form method="POST" action="../deletemap/{{ $singleMap->id }}">
 				    <input type="hidden" name="_method" value="DELETE">
 					<button type="submit" class="btn btn-danger">Delete</button>
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
