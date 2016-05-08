@@ -5,8 +5,8 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel-body">
-				<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addnode">Add New Step</button>
-			  	<div id="addnode" class="collapse">
+				<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addstep">Add New Step</button>
+			  	<div id="addstep" class="collapse">
 					<h3>Add a New Step</h3>
 
 					<form method="POST" action="/step/add">
