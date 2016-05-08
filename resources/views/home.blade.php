@@ -29,7 +29,7 @@
 					@endforeach
 				</div>
 				<div class="panel-body">
-					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addmap">Add New Map</button>
+					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
   					<div id="addmap" class="collapse">
   						<div class="row">
 							<div class="col-md-6 col-md-offset-3">

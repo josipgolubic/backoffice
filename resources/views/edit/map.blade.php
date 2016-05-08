@@ -3,7 +3,7 @@
 @section('content')
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<h3>Add a New Map</h3>
+			<h3>Edit Map: {{ $map->KEY_MAP_DESCRIPTION }}</h3>
 
 			<form method="POST" action="/changemap/{{ $map->id }}">
 			    <input type="hidden" name="_method" value="PATCH">

@@ -99,6 +99,12 @@ class HomeController extends Controller {
             return redirect('home');
 	}
 
+	public function deleteMap(Request $request, $id)
+	{
+		DB::table('TABLE_XML_INFO')->where('id', $id)->delete();
+		return redirect('home');
+	}
+
 	public function storeNode(Request $request)
 	{
 		$id = DB::table('TABLE_NODE')->insertGetId(
