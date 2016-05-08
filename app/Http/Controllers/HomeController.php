@@ -102,7 +102,7 @@ class HomeController extends Controller {
 		return redirect('home');
 	}
 
-	public function showStepForm($id)	
+	public function showStepForm()	
 	{
 		$steps = DB::table('TABLE_STEP')->get();
 		$nodes = DB::table('TABLE_NODE')->get();
