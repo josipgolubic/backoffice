@@ -24,11 +24,11 @@ Route::get('page', function() {
 	return "Hello";
 });
 
-Route::get('map', array('uses' => 'HomeController@showMapForm', 'as' => 'map'));
+/*Route::get('map', array('uses' => 'HomeController@showMapForm', 'as' => 'map'));
 Route::get('building', array('uses' => 'HomeController@showBuildingForm', 'as' => 'building'));
 Route::get('floor', array('uses' => 'HomeController@showFloorForm', 'as' => 'floor'));
 Route::get('position', array('uses' => 'HomeController@showPositionForm', 'as' => 'position'));
-Route::get('route', array('uses' => 'HomeController@showRouteForm', 'as' => 'route'));
+Route::get('route', array('uses' => 'HomeController@showRouteForm', 'as' => 'route'));*/
 
 Route::get('map/{id}', 'HomeController@showMap');
 Route::get('step', array('uses' => 'HomeController@showStepForm', 'as' => 'step'));

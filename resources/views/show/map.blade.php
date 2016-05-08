@@ -6,13 +6,13 @@
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel-body">
 				<h2>{{ $singleMap->KEY_MAP_DESCRIPTION }}</h2>
-				<a class="btn btn-warning" href="edit/{{ $singleMap->id }}">Edit</a>
+				<a class="btn btn-warning btn-block" href="edit/{{ $singleMap->id }}">Edit</a>
 				<form method="POST" action="../deletemap/{{ $singleMap->id }}">
 				    <input type="hidden" name="_method" value="DELETE">
-					<button type="submit" class="btn btn-danger">Delete</button>
+					<button type="submit" class="btn btn-danger btn-block">Delete</button>
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 				</form>
-				<a class="btn btn-info" href="{{ route('home') }}">Go Back</a>
+				<a class="btn btn-info btn-block" href="{{ route('home') }}">Go Back</a>
 			</div>
 		</div>
 	</div>
@@ -20,7 +20,7 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel-body">
-				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addnode">Add New Node</button>
+				<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addnode">Add New Node</button>
 			  	<div id="addnode" class="collapse">
 					<h3>Add a New Node</h3>
 
