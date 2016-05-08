@@ -6,7 +6,7 @@
 			<h3>Add a New Map</h3>
 
 			<form method="POST" action="/changemap/{{ $map->id }}">
-			{{ method_field('PATCH') }}
+			    <input type="hidden" name="_method" value="PATCH">
 				<div class="form-group">
 					<h4><small>Map version:</small></h4>
 					<input type="text" name="MapVersion" class="form-control" value="{{ $map->KEY_MAP_VERSION }}"></input>
