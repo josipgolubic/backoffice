@@ -11,9 +11,9 @@ class DBController extends Controller {
 
 	public function display()
 	{
-		$table_xml_info = json_encode(DB::table('TABLE_XML_INFO')->get());
-		$table_node = json_encode(DB::table('TABLE_NODE')->get());
-		$table_step = json_encode(DB::table('TABLE_STEP')->get());
+		$table_xml_info = json_encode(DB::table('maps')->get());
+		$table_node = json_encode(DB::table('nodes')->get());
+		$table_step = json_encode(DB::table('steps')->get());
 
 		return '{"table_xml_info": ' . $table_xml_info . "," . '"table_node": ' . $table_node . "," . '"table_step": ' . $table_step . '}';
 		/*if(DB::connection()->getDatabaseName())
