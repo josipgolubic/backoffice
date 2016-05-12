@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMapsTable extends Migration {
+class CreateStepsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,15 @@ class CreateMapsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('maps', function(Blueprint $table)
+		Schema::create('steps', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('version');
+			$table->integer('startNode');
+			$table->integer('endNode');
+			$table->integer('pathCost');
+			$table->integer('order');
+			$table->string('image');
 			$table->string('description');
-			$table->string('hash');
-			$table->timestamps();
 		});
 	}
 
@@ -29,7 +31,7 @@ class CreateMapsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Maps');
+		Schema::drop('steps');
 	}
 
 }
