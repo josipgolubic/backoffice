@@ -38,7 +38,7 @@
 			.title {
 				font-size: 96px;
 				font-weight: 900;
-				text-shadow: 1px 1px #000000;
+    			text-shadow: 2px 2px 3px rgba(0,0,0,0.6)
 				margin-bottom: 40px;
 			}
 
@@ -50,7 +50,7 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
+				<div class="title">Backoffice</div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
 			</div>
 		</div>
