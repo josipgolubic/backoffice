@@ -47,7 +47,7 @@ Route::patch('changemap/{id}', 'HomeController@updateMap');
 Route::delete('deletemap/{id}', 'HomeController@deleteMap');
 ///////////////////////////////
 
-Route::get('map', 'MapsController@index');
+Route::get('maps', 'MapsController@index');
 
 
 

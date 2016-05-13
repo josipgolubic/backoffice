@@ -3,7 +3,6 @@
 		<title>Laravel</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 		<style>
 			.full {
@@ -52,8 +51,8 @@
 		<div class="container">
 			<div class="content">
 				<div class="title">Backoffice</div>
-				<div>
-					<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+				<div class="container">
+					<a href="/maps" class="btn btn-default btn-lg">Twitter</a>
 				</div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
 			</div>
