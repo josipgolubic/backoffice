@@ -1,10 +1,18 @@
-<html>
+<html class="full">
 	<head>
 		<title>Laravel</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
 		<style>
+			.full {
+			    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+			    -webkit-background-size: cover;
+			    -moz-background-size: cover;
+			    background-size: cover;
+			    -o-background-size: cover;
+			}
+
 			body {
 				margin: 0;
 				padding: 0;
