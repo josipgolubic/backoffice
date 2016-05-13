@@ -29,7 +29,7 @@ class CreateMapsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Maps');
+		Schema::drop('maps');
 	}
 
 }

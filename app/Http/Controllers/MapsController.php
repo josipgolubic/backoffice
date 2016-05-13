@@ -43,7 +43,7 @@ class MapsController extends Controller {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $map
+	 * @param  int  $id
 	 * @return Response
 	 */
 	public function show(Map $map)
