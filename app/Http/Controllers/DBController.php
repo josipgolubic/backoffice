@@ -16,7 +16,7 @@ class DBController extends Controller {
 	{
 		$maps = Map::all();//json_encode(DB::table('maps')->get());
 		$nodes = Node::all();//json_encode(DB::table('nodes')->get());
-		$steps = Steps::all();//json_encode(DB::table('steps')->get());
+		$steps = Step::all();//json_encode(DB::table('steps')->get());
 
 		return '{"maps": ' . $maps . "," . '"nodes": ' . $nodes . "," . '"steps": ' . $steps . '}';
 		/*if(DB::connection()->getDatabaseName())
