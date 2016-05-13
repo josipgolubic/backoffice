@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use App\Map;
+use App\Map as Map;
 
 class MapsController extends Controller {
 
