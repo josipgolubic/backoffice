@@ -37,6 +37,7 @@
 
 			.title {
 				font-size: 96px;
+				font-weight: 900;
 				margin-bottom: 40px;
 			}
 
