@@ -8,7 +8,10 @@
 				<div class="panel-body">
 					@foreach ($maps as $map)
 						<ul class="list-inline">
-	    					<a href="/map/{{ $map->id }}" class="list-group-item text-center"> {{ $map->description }}</a>
+	    					<a href="/map/{{ $map->id }}" class="list-group-item"> 
+	    					    <h4 class="list-group-item-heading">{{ $map->description }}</h4>
+      							<p class="list-group-item-text">Version: {{ $map->description }}</p>
+	    					</a>
 	    				</ul>
 					@endforeach
 				</div>
@@ -40,9 +43,6 @@
 							</div>
 						</div>
   					</div>
-				</div>
-				<div class="panel-body">
-					<a href="{{ URL::route('step') }}" class="btn btn-default btn-block">Add Step</a>
 				</div>
 			</div>
 		</div>
