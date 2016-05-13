@@ -46,8 +46,9 @@ class MapsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show(Map $map)
+	public function show($id)
 	{
+		$map = Map::find($id);
 		return $map;
 	}
 
