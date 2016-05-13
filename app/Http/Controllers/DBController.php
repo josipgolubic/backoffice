@@ -6,16 +6,19 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use DB;
+use App\Map;
+use App\Node;
+use App\Step;
 
 class DBController extends Controller {
 
 	public function display()
 	{
-		$table_xml_info = json_encode(DB::table('maps')->get());
-		$table_node = json_encode(DB::table('nodes')->get());
-		$table_step = json_encode(DB::table('steps')->get());
+		$maps = Map::all();//json_encode(DB::table('maps')->get());
+		$nodes = Node::all();//json_encode(DB::table('nodes')->get());
+		$steps = Steps::all();//json_encode(DB::table('steps')->get());
 
-		return '{"table_xml_info": ' . $table_xml_info . "," . '"table_node": ' . $table_node . "," . '"table_step": ' . $table_step . '}';
+		return '{"maps": ' . $maps . "," . '"nodes": ' . $nodes . "," . '"steps": ' . $steps . '}';
 		/*if(DB::connection()->getDatabaseName())
 		{
 			echo "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
