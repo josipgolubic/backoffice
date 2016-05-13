@@ -10,7 +10,7 @@
 						<ul class="list-inline">
 	    					<a href="/map/{{ $map->id }}" class="list-group-item"> 
 	    					    <h4 class="list-group-item-heading">{{ $map->description }}</h4>
-      							<p class="list-group-item-text">Version: {{ $map->description }}</p>
+      							<p class="list-group-item-text">Version: {{ $map->version }}</p>
 	    					</a>
 	    				</ul>
 					@endforeach
@@ -26,8 +26,8 @@
 									<div class="form-group">
 										<h4><small>Map version:</small></h4>
 										<input type="text" name="mapVersion" class="form-control"></input>
-										
 									</div>
+									
 									<div class="form-group">
 										<h4><small>Map description:</small></h4>
 										<input type="text" name="mapDescription" class="form-control"></input>
