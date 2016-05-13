@@ -8,7 +8,7 @@
 				<div class="panel-body">
 					@foreach ($maps as $map)
 						<ul class="list-inline">
-	    					<a href="/map/{{ $map->id }}" class="list-group-item"> {{ $map->description }}</a>
+	    					<a href="/map/{{ $map->id }}" class="list-group-item text-center"> {{ $map->description }}</a>
 	    				</ul>
 					@endforeach
 				</div>
