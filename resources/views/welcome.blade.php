@@ -6,7 +6,7 @@
 
 		<style>
 			.full {
-			    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+			    background: url('/images/backoffice.jpeg') no-repeat center center fixed;
 			    -webkit-background-size: cover;
 			    -moz-background-size: cover;
 			    background-size: cover;
