@@ -48,7 +48,8 @@ Route::delete('deletemap/{id}', 'HomeController@deleteMap');
 ///////////////////////////////
 
 Route::get('maps', 'MapsController@index');
-Route::get('maps/{id}', 'MapsController@show');
+Route::bind('map', function($value, $route) { return App\Map::find($map); });
+Route::get('maps/{map}', 'MapsController@show');
 
 
 
