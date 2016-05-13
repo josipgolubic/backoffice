@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use App\Map as Map;
+use App\Map;
 
 class MapsController extends Controller {
 
@@ -48,8 +48,9 @@ class MapsController extends Controller {
 	 */
 	public function show(Map $map)
 	{
+		$newmap = $map;
 		//$map = Map::find($id);
-		return $map;
+		return $newmap;
 	}
 
 	/**
