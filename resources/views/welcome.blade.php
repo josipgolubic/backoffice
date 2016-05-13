@@ -1,6 +1,6 @@
 <html class="full">
 	<head>
-		<title>Laravel</title>
+		<title>Backoffice</title>
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link href="{{ asset('/css/landing.css') }}" rel="stylesheet">
@@ -18,7 +18,7 @@
 	                        <hr class="intro-divider">
 	                        <ul class="list-inline intro-social-buttons">
 	                            <li>
-	                                <a href="/maps" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Maps</span></a>
+	                                <a href="{{ url('/maps') }}" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Maps</span></a>
 	                            </li>
 	                            <li>
 	                                <a href="{{ url('/auth/login') }}" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Login</span></a>
