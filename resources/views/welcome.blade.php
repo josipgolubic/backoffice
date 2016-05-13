@@ -13,18 +13,15 @@
 	            <div class="row">
 	                <div class="col-lg-12">
 	                    <div class="intro-message">
-	                        <h1>Landing Page</h1>
-	                        <h3>A Template by Start Bootstrap</h3>
+	                        <h1>Backoffice</h1>
+	                        <h3>Manage Your Maps</h3>
 	                        <hr class="intro-divider">
 	                        <ul class="list-inline intro-social-buttons">
 	                            <li>
-	                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+	                                <a href="/maps" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Maps</span></a>
 	                            </li>
 	                            <li>
-	                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-	                            </li>
-	                            <li>
-	                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+	                                <a href="{{ url('/auth/login') }}" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Login</span></a>
 	                            </li>
 	                        </ul>
 	                    </div>
