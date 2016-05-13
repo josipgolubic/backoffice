@@ -48,7 +48,7 @@ class MapsController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		return $id;
 	}
 
 	/**
