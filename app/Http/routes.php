@@ -45,6 +45,11 @@ Route::get('step/edit/{id}', 'HomeController@editStep');
 Route::patch('changemap/{id}', 'HomeController@updateMap');
 
 Route::delete('deletemap/{id}', 'HomeController@deleteMap');
+///////////////////////////////
+
+Route::get('map', 'MapsController@index');
+
+
 
 Route::get('database', ['middleware' => 'cors', 'uses' => 'DBController@display']);
 	/*, function() {
