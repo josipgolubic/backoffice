@@ -46,11 +46,11 @@ class MapsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show(Map $id)
+	public function show(Map $map)
 	{
 		//Why can't I type hint show(Map $map)?
 		//$map = Map::find($id);
-		dd($id);
+		dd($map);
 		return $map;
 	}
 
