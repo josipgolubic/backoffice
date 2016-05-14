@@ -50,7 +50,7 @@ class MapsController extends Controller {
 	{
 		//show(Map $map) for RMB
 		$map = Map::find($id);
-		return $map;
+		return view('maps.show', compact('map'));
 	}
 
 	/**
