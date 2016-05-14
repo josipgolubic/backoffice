@@ -35,7 +35,7 @@
 
 									<div class="form-group">
 										<button type="submit" class="btn btn-primary">Add Map</button>
-										<a class="btn btn-danger btn-close" href="{{ route('home') }}">Cancel</a>
+										<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addmap">Cancel</button>
 									</div>
 
 									<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
