@@ -6,8 +6,8 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Map Overview</div>
 				<div class="panel-body">
-					<h1>Map: {{ $map->description }}</h1>
-					<h2>Map Version: {{ $map->version }}</h2>
+					<h2>Map: {{ $map->description }}</h2>
+					<h3>Map Version: {{ $map->version }}</h3>
 				</div>
 				<!-- /.panel-body -->
 			</div>
