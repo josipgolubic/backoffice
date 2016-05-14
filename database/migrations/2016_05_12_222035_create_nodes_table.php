@@ -15,15 +15,16 @@ class CreateNodesTable extends Migration {
 		Schema::create('nodes', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('map_id')->unsigned()->index();
 			$table->string('description');
-			$table->integer('xPos');
-			$table->integer('yPos');
+			$table->integer('x_pos');
+			$table->integer('y_pos');
 			$table->string('type');
-			$table->string('buildingDescription');
-			$table->integer('floorLevel');
-			$table->string('floorDescription');
-			$table->integer('floorLength');
-			$table->integer('floorWidth');
+			$table->string('building_description');
+			$table->integer('floor_level');
+			$table->string('floor_description');
+			$table->integer('floor_length');
+			$table->integer('floor_width');
 		});
 	}
 

@@ -15,10 +15,11 @@ class CreateStepsTable extends Migration {
 		Schema::create('steps', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('startNode');
-			$table->integer('endNode');
-			$table->integer('pathCost');
-			$table->integer('order');
+			$table->integer('map_id')->unsigned()->index();
+			$table->integer('start_node')->unsigned();
+			$table->integer('end_node')->unsigned();
+			$table->integer('path_cost')->unsigned();
+			$table->integer('order')->unsigned();
 			$table->string('image');
 			$table->string('description');
 		});
