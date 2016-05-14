@@ -6,12 +6,12 @@ class Map extends Model {
 
 	public function nodes()
 	{
-		return $this->hasMany(Node::class);
+		return $this->hasMany('App\Node');
 	}
 
 	public function steps()
 	{
-		return $this->hasMany(Step::class);
+		return $this->hasMany('App\Step');
 	}
 
 }

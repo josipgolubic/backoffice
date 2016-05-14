@@ -6,7 +6,7 @@ class Node extends Model {
 
 	public function map()
 	{
-		return $this->belongsTo(Map::class);
+		return $this->belongsTo('App\Map');
 	}
 
 }
