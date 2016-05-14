@@ -15,7 +15,7 @@ class CreateMapsTable extends Migration {
 		Schema::create('maps', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('version')->unsigned();
+			$table->string('version');
 			$table->string('description');
 			$table->string('hash');
 			$table->timestamps();
