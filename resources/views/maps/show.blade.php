@@ -8,13 +8,19 @@
 				<div class="panel-body">
 					<h2>Map: {{ $map->description }}</h2>
 					<h3>Map Version: {{ $map->version }}</h3>
+					<h3>Map Nodes:</h3>
+					<ul>
+						@foreach ($map->nodes as $node)
+							<li>{{ $node->description }}</li>
+						@endforeach
+					</ul>
 					<a class="btn btn-warning btn-block" href="edit/{{ $map->id }}">Edit</a>
 					<form method="POST" action="../deletemap/{{ $map->id }}">
 					    <input type="hidden" name="_method" value="DELETE">
 						<button type="submit" class="btn btn-danger btn-block">Delete</button>
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 					</form>
-					<a class="btn btn-info btn-block" href="{{ route('maps') }}">Go Back</a>
+					<a class="btn btn-info btn-block" href="{{ url('/maps') }}">Go Back</a>
 				</div>
 				<!-- /.panel-body -->
 			</div>
