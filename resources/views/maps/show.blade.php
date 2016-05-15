@@ -6,8 +6,9 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Map Overview</div>
 				<div class="panel-body">
-					<h2>Map: {{ $map->description }}</h2>
-					<h3>Map Version: {{ $map->version }}</h3>
+					<h2>Map: <small>{{ $map->description }}</small></h2>
+					<hr>
+					<h3>Map Version: <small>{{ $map->version }}</small></h3>
 					<ul class="list-group">
 						@foreach ($map->nodes as $node)
 							<li class="list-group-item">{{ $node->description }}</li>
