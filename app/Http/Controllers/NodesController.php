@@ -53,7 +53,7 @@ class NodesController extends Controller {
 
 		$map->nodes()->save($node);*/
 
-		$map->nodes()->create($request->all);
+		$map->nodes()->create($request->all());
 
 		return back();
 	}
