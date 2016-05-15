@@ -6,7 +6,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><strong>Map Overview</strong></div>
 				<div class="panel-body">
-					<h3>Map: <small>{{ $map->description }}</small></h3>
+					<h3>Map: <small>{{ $map->description }}</strong></small></h3>
 
 					<hr>
 
@@ -32,37 +32,37 @@
 
 							<form method="POST" action="/nodes">
 								<div class="form-group">
-									<h4><small><strong>Description</strong></small></h4>
+									<h4><small><strong>Description</strong></strong></small></h4>
 									<input type="text" name="description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small><strong>Building Description</strong></small></h4>
+									<h4><small><strong>Building Description</strong></strong></small></h4>
 									<input type="text" name="building_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small><strong>Floor Description</strong></small></h4>
+									<h4><small><strong>Floor Description</strong></strong></small></h4>
 									<input type="text" name="floor_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small><strong>Floor Level</strong></small></h4>
+									<h4><small><strong>Floor Level</strong></strong></small></h4>
 									<input type="text" name="floor_level" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small><strong>Floor Length</strong></small></h4>
+									<h4><small><strong>Floor Length</strong></strong></small></h4>
 									<input type="text" name="floor_length" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small><strong>Floor Width</strong></small></h4>
+									<h4><small><strong>Floor Width</strong></strong></small></h4>
 									<input type="text" name="floor_width" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small><strong>Type</strong></small></h4>
+									<h4><small><strong>Type</strong></strong></small></h4>
 									<select class="form-control" name="type">
 										<option value="qrcode">QRCode</option>
 									  	<option value="stairs">Stairs</option>
@@ -72,13 +72,13 @@
 
 								<div class="form-group">
 									<div class="row" id="coordinates_row">
-										<h4><small><strong>Coordinates</strong></small></h4>
+										<h4><small><strong>Coordinates</strong></strong></small></h4>
 										<div class="col-xs-2">
-											<h4><small><strong>X:</strong></small></h4>
+											<h4><small><strong>X:</strong></strong></small></h4>
 											<input type="text" name="x_pos" class="form-control"></input>
 										</div>
 										<div class="col-xs-2">
-											<h4><small><strong>Y:</strong></small></h4>
+											<h4><small><strong>Y:</strong></strong></small></h4>
 											<input type="text" name="y_pos" class="form-control"></input>
 										</div>
 									</div>
@@ -96,6 +96,74 @@
 						<!-- /.col-md-10 col-md-offset-1 -->
 					</div>
 					<!-- /.collapse id=addnode -->
+
+					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addstep">Add Step Between Nodes</button>
+				  	<div id="addstep" class="collapse">
+				  		<div class="col-md-10 col-md-offset-1">
+				  			@if (count($map->nodes) > 1)
+								<h3>Add a New Step</h3>
+
+								<form method="POST" action="/step/add">
+									<div class="form-group">
+										<h4><small><strong>Start Node:</strong></small></h4>
+										<select class="form-control" name="start_node">
+											@foreach ($map->nodes as $node)
+												<option value="{{ $node->id }}">{{ $node->start_node }}</option>
+											@endforeach	
+										</select>
+									</div>
+
+									<div class="form-group">
+										<h4><small><strong>End Node:</strong></small></h4>
+										<select class="form-control" name="end_node">
+											@foreach ($map->nodes as $node)
+												<option value="{{ $node->id }}">{{ $node->end_node }}</option>
+											@endforeach	
+										</select>
+									</div>
+
+									<div class="form-group">
+										<h4><small><strong>Path Cost:</strong></small></h4>
+										<input type="text" name="path_cost" class="form-control"></input>
+									</div>
+
+									<div class="form-group">
+										<h4><small><strong>Step Order:</strong></small></h4>
+										<input type="text" name="step_order" class="form-control"></input>
+									</div>
+
+									<div class="form-group">
+										<h4><small><strong>Step Image:</strong></small></h4>
+										<input type="text" name="step_image" class="form-control" disabled></input>
+									</div>
+
+									<div class="form-group">
+										<h4><small><strong>Step Description:</strong></small></h4>
+										<input type="text" name="step_description" class="form-control"></input>
+									</div>
+									
+									<div class="form-group">
+										<button type="submit" class="btn btn-primary">Add Step</button>
+										<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addstep"><strong>Cancel</strong></button>
+									</div>
+
+									<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+								</form>
+
+								@else
+									@if (count($map->nodes) == 0)
+										<h5 class="text-danger"><strong>There are 0 nodes in this map.</strong></h5>
+									@else
+										<h5 class="text-danger"><strong>There is only 1 node in this map.</strong></h5>
+									@endif
+
+									<h5 class="text-danger"><strong>Please ensure that at least 2 nodes exist in this map before adding a step.</strong></h5>
+
+								@endif 
+						</div>
+						<!-- /.col-md-10 col-md-offset-1 -->
+					</div>
+					<!-- /.collapse id=addstep -->
 				</div>
 				<!-- /.panel-body -->
 
