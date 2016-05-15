@@ -35,17 +35,25 @@
 
 							<form method="POST" action="/node/add">
 								<div class="form-group">
-									<label for="building_description">Building Description</label>
+									<label for="building_description" class="label label-pill label-default">Building Description</label>
 									<input type="text" name="building_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
 									<label for="floor_description">Floor Description</label>
 									<input type="text" name="floor_description" class="form-control"></input>
+								</div>
+
 									<label for="floor_level">Floor Level</label>
 									<input type="text" name="floor_level" class="form-control"></input>
+								</div>
+
+								<div class="form-group">
 									<label for="floor_length">Floor Length</label>
 									<input type="text" name="floor_length" class="form-control"></input>
+								</div>
+
+								<div class="form-group">
 									<label for="floor_width">Floor Width</label>
 									<input type="text" name="floor_width" class="form-control"></input>
 								</div>
@@ -57,9 +65,14 @@
 									  	<option value="stairs">Stairs</option>
 									  	<option value="elevator">Elevator</option>
 									</select>
+								</div>
+
+								<div class="form-group">
 									<label for="description">Description</label>
 									<input type="text" name="description" class="form-control"></input>
+								</div>
 
+								<div class="form-group">
 									<label for="coordinates_row">Coordinates</label>
 									<div class="row" id="coordinates_row">
 										<div class="col-xs-2">
