@@ -171,7 +171,7 @@
 				<hr>
 
 				<div class="panel-body">
-					<a class="btn btn-info btn-block" href="edit/{{ $map->id }}"><strong>Edit</strong></a>
+					<a class="btn btn-info btn-block" href="/maps/{{ $map->id }}/edit"><strong>Edit</strong></a>
 
 					<hr>
 
