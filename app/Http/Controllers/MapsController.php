@@ -44,6 +44,8 @@ class MapsController extends Controller {
 		$map->hash = $request->_token;
 
 		$map->save();
+
+		return back();
 	}
 
 	/**
