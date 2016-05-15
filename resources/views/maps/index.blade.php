@@ -17,6 +17,8 @@
 				</div>
 				<!-- /.panel-body -->
 
+				<hr>
+				
 				<div class="panel-body">
 					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
 	  				<div id="addmap" class="collapse">

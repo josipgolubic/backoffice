@@ -6,9 +6,13 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Map Overview</div>
 				<div class="panel-body">
+
 					<hr>
+
 					<h3>Map: <small>{{ $map->description }}</small></h3>
+
 					<hr>
+
 					<h5>Map Version: {{ $map->version }}</h5>
 
 					@if (count($map->nodes) > 0)
@@ -25,14 +29,19 @@
 					@endif 
 
 					<hr>
+
 					<a class="btn btn-info btn-block" href="edit/{{ $map->id }}">Edit</a>
+
 					<hr>
+
 					<form method="POST" action="../deletemap/{{ $map->id }}">
 					    <input type="hidden" name="_method" value="DELETE">
 						<button type="submit" class="btn btn-danger btn-block">Delete</button>
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 					</form>
+					
 					<hr>
+
 					<a class="btn btn-default btn-block" href="{{ url('/maps') }}">Go Back</a>
 				</div>
 				<!-- /.panel-body -->
