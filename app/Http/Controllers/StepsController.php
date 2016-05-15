@@ -32,9 +32,13 @@ class StepsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$map = Map::find($request->map_id);
+
+		$map->steps()->create($request->all());
+
+		return back();
 	}
 
 	/**

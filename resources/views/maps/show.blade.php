@@ -147,6 +147,7 @@
 										<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addstep"><strong>Cancel</strong></button>
 									</div>
 
+									<input type="hidden" name="map_id" value="{{ $map->id }}"></input>
 									<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 								</form>
 
