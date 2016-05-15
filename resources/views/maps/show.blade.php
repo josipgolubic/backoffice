@@ -44,6 +44,7 @@
 									<input type="text" name="floor_description" class="form-control"></input>
 								</div>
 
+								<div class="form-group">
 									<label for="floor_level">Floor Level</label>
 									<input type="text" name="floor_level" class="form-control"></input>
 								</div>
