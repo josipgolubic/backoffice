@@ -19,7 +19,7 @@
 						</div>
 
 						<div class="form-group">
-							<button type="submit" class="btn btn-primary"><strong>Update Node</strong></button>
+							<button type="submit" class="btn btn-primary"><strong>Update Map</strong></button>
 							<a class="btn btn-danger btn-close" href="{{ URL::previous() }}"><strong>Cancel</strong></a>
 						</div>
 
