@@ -97,7 +97,7 @@
 					</div>
 					<!-- /.collapse id=addnode -->
 
-					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addstep">Add Step Between Nodes</button>
+					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addstep"><strong>Add Step Between Nodes</strong></button>
 				  	<div id="addstep" class="collapse">
 				  		<div class="col-md-10 col-md-offset-1">
 				  			@if (count($map->nodes) > 1)
@@ -151,8 +151,8 @@
 								</form>
 
 								@else
-									@if (count($map->nodes) == 0)
-										<h5 class="text-danger"><strong>There are 0 nodes in this map.</strong></h5>
+									@if (!count($map->nodes))
+										<h5 class="text-danger"><strong>There are no nodes in this map.</strong></h5>
 									@else
 										<h5 class="text-danger"><strong>There is only 1 node in this map.</strong></h5>
 									@endif
