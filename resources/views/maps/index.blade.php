@@ -15,7 +15,7 @@
 	    				</ul>
 					@endforeach
 				
-					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
+					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap">Add New Map <span class="glyphicon glyphicon-plus"></span></button>
 	  				<div id="addmap" class="collapse">
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
@@ -32,7 +32,7 @@
 								</div>
 
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Add Map</button>
+									<button type="submit" class="btn btn-primary">Add Map</button>
 									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addmap">Cancel</button>
 								</div>
 
