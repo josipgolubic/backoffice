@@ -1,6 +1,6 @@
 @extends('maps.show')
 
-@section('node_form')
+@section('node')
 	<div class="col-md-10 col-md-offset-1">
 		<h3>Add a New Node</h3>
 
