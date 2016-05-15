@@ -35,32 +35,32 @@
 
 							<form method="POST" action="/node/add">
 								<div class="form-group">
-									<h4><small>Building Description</h4></small>
+									<h4><small><strong>Building Description</strong></small></h4>
 									<input type="text" name="building_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Floor Description</h4></small>
+									<h4><small><strong>Floor Description</strong></small></h4>
 									<input type="text" name="floor_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Floor Level</h4></small>
+									<h4><small><strong>Floor Level</strong></small></h4>
 									<input type="text" name="floor_level" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Floor Length</h4></small>
+									<h4><small><strong>Floor Length</strong></small></h4>
 									<input type="text" name="floor_length" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Floor Width</h4></small>
+									<h4><small><strong>Floor Width</strong></small></h4>
 									<input type="text" name="floor_width" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Type</h4></small>
+									<h4><small><strong>Type</strong></small></h4>
 									<select class="form-control" name="type">
 										<option value="qrcode">QRCode</option>
 									  	<option value="stairs">Stairs</option>
@@ -69,19 +69,19 @@
 								</div>
 
 								<div class="form-group">
-									<h4><small>Description</h4></small>
+									<h4><small><strong>Description</strong></small></h4>
 									<input type="text" name="description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Coordinates</h4></small>
 									<div class="row" id="coordinates_row">
+										<h4><small><strong>Coordinates</strong></small></h4>
 										<div class="col-xs-2">
-											<h4><small>X:</h4></small>
+											<h4><small><strong>X:</strong></small></h4>
 											<input type="text" name="x_pos" class="form-control"></input>
 										</div>
 										<div class="col-xs-2">
-											<h4><small>Y:</h4></small>
+											<h4><small><strong>Y:</strong></small></h4>
 											<input type="text" name="y_pos" class="form-control"></input>
 										</div>
 									</div>
