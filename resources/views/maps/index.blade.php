@@ -2,7 +2,7 @@
 	
 @section('content')
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
+		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 				<div class="panel-heading">Existing Maps</div>
 				<div class="panel-body">
@@ -20,7 +20,7 @@
 				<div class="panel-body">
 					<button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
 	  				<div id="addmap" class="collapse">
-						<div class="col-md-6 col-md-offset-3">
+						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
 
 							<form method="POST" action="/map/add">
