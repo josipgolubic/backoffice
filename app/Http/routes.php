@@ -53,6 +53,8 @@ Route::post('maps', 'MapsController@store');
 
 Route::post('nodes', 'NodesController@store');
 
+Route::post('steps', 'StepsController@store');
+
 //route model binding so I can type hint
 //Route::bind('map', function($value, $route) { return App\Map::find($value); });
 ////////////////////////////////////////

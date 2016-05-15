@@ -103,7 +103,7 @@
 				  			@if (count($map->nodes) > 1)
 								<h3>Add a New Step</h3>
 
-								<form method="POST" action="/step/add">
+								<form method="POST" action="/steps">
 									<div class="form-group">
 										<h4><small><strong>Start Node:</strong></small></h4>
 										<select class="form-control" name="start_node">
