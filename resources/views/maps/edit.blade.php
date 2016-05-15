@@ -6,7 +6,8 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><strong>Edit Map: {{ $map->description }}</strong></div>
 				<div class="panel-body">	
-					<form method="POST" action="/maps/{{ $map->id }}/edit">
+					<form method="POST" action="/maps/{{ $map->id }}">
+						<input type="hidden" name="_method" value="PATCH">
 						<div class="form-group">
 							<h4><small><strong>Description</strong></small></h4>
 							<input type="text" name="description" class="form-control" value="{{ $map->description }}"></input>
@@ -18,7 +19,7 @@
 						</div>
 
 						<div class="form-group">
-							<button type="submit" class="btn btn-primary"><strong>Save Changes</strong></button>
+							<button type="submit" class="btn btn-primary"><strong>Update Node</strong></button>
 							<a class="btn btn-danger btn-close" href="{{ URL::previous() }}"><strong>Cancel</strong></a>
 						</div>
 

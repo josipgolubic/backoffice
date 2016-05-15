@@ -59,7 +59,7 @@ class MapsController extends Controller {
 	{
 		//show(Map $map) for RMB
 		$map = Map::find($id);
-		
+
 		return view('maps.show', compact('map'));
 	}
 
@@ -82,9 +82,13 @@ class MapsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
-		//
+		$map = Map::find($id);
+
+		$map->update($request->all());
+
+		return redirect('/maps/'.$id);
 	}
 
 	/**
