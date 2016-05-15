@@ -175,7 +175,7 @@
 
 					<hr>
 
-					<form method="POST" action="/mapss/{{ $map->id }}">
+					<form method="POST" action="/maps/{{ $map->id }}">
 					    <input type="hidden" name="_method" value="DELETE">
 						<button type="submit" class="btn btn-danger btn-block"><strong>Delete</strong></button>
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
