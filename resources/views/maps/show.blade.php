@@ -175,12 +175,18 @@
 
 					<hr>
 
-					<form method="POST" action="/maps/{{ $map->id }}">
+					<form method="POST" action="/mapss/{{ $map->id }}">
 					    <input type="hidden" name="_method" value="DELETE">
 						<button type="submit" class="btn btn-danger btn-block"><strong>Delete</strong></button>
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 					</form>
 
+
+<!-- /. 				<form method="POST" action="../deletemap/{{ $singleMap->id }}">
+				    <input type="hidden" name="_method" value="DELETE">
+					<button type="submit" class="btn btn-danger btn-block">Delete</button>
+					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+				</form> -->
 					<hr>
 
 					<a class="btn btn-default btn-block" href="{{ url('/maps') }}"><strong>Go Back</strong></a>
