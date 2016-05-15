@@ -58,10 +58,13 @@
 								</select>
 								<h4><small>Node description:</small></h4>
 								<input type="text" name="description" class="form-control"></input>
-								<h4><small>Node X Coordinate:</small></h4>
-								<input type="text" name="x_pos" class="form-control"></input>
-								<h4><small>Node Y Coordinate:</small></h4>
-								<input type="text" name="y_pos" class="form-control"></input>
+
+								<div class="col-xs-2">
+									<h4><small>X Coordinate:</small></h4>
+									<input type="text" name="x_pos" class="form-control"></input>
+									<h4><small>Y Coordinate:</small></h4>
+									<input type="text" name="y_pos" class="form-control"></input>
+								</div>
 							</div>
 							
 							<div class="form-group">
