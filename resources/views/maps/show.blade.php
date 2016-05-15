@@ -32,6 +32,11 @@
 
 							<form method="POST" action="/nodes">
 								<div class="form-group">
+									<h4><small><strong>Description</strong></small></h4>
+									<input type="text" name="description" class="form-control"></input>
+								</div>
+
+								<div class="form-group">
 									<h4><small><strong>Building Description</strong></small></h4>
 									<input type="text" name="building_description" class="form-control"></input>
 								</div>
@@ -63,11 +68,6 @@
 									  	<option value="stairs">Stairs</option>
 									  	<option value="elevator">Elevator</option>
 									</select>
-								</div>
-
-								<div class="form-group">
-									<h4><small><strong>Description</strong></small></h4>
-									<input type="text" name="description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
