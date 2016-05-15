@@ -27,54 +27,63 @@
 						<h5 class="text-danger">There are no nodes available for this map!</h5>
 
 					@endif 
+				</div>
+				<!-- /. panel-body -->
 
+				<hr>
+
+				<div class="panel-body">
 					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addnode">Add New Node</button>
 				  	<div id="addnode" class="collapse">
-						<h3>Add a New Node</h3>
+				  		<div class="col-md-10 col-md-offset-1">
+							<h3>Add a New Node</h3>
 
-						<form method="POST" action="/node/add">
-							<div class="form-group">
-								<h4><small>Building:</small></h4>
-								<input type="text" name="building_description" class="form-control"></input>
-							</div>
-
-							<div class="form-group">
-								<h4><small>Floor Description</small></h4>
-								<input type="text" name="floor_Description" class="form-control"></input>
-								<h4><small>Floor Level</small></h4>
-								<input type="text" name="floor_level" class="form-control"></input>
-								<h4><small>Floor Length</small></h4>
-								<input type="text" name="floor_length" class="form-control"></input>
-								<h4><small>Floor Width</small></h4>
-								<input type="text" name="floor_width" class="form-control"></input>
-							</div>
-
-							<div class="form-group">
-								<h4><small>Node Type:</small></h4>
-								<select class="form-control" name="type">
-									<option value="qrcode">QRCode</option>
-								  	<option value="stairs">Stairs</option>
-								  	<option value="elevator">Elevator</option>
-								</select>
-								<h4><small>Node description:</small></h4>
-								<input type="text" name="description" class="form-control"></input>
-
-								<div class="col-xs-2">
-									<h4><small>X Coordinate:</small></h4>
-									<input type="text" name="x_pos" class="form-control"></input>
-									<h4><small>Y Coordinate:</small></h4>
-									<input type="text" name="y_pos" class="form-control"></input>
+							<form method="POST" action="/node/add">
+								<div class="form-group">
+									<h4><small>Building:</small></h4>
+									<input type="text" name="building_description" class="form-control"></input>
 								</div>
-							</div>
-							
-							<div class="form-group">
-								<button type="submit" class="btn btn-primary">Add Node</button>
-								<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addnode">Cancel</button>
-							</div>
 
-							<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-						</form>
+								<div class="form-group">
+									<h4><small>Floor Description</small></h4>
+									<input type="text" name="floor_Description" class="form-control"></input>
+									<h4><small>Floor Level</small></h4>
+									<input type="text" name="floor_level" class="form-control"></input>
+									<h4><small>Floor Length</small></h4>
+									<input type="text" name="floor_length" class="form-control"></input>
+									<h4><small>Floor Width</small></h4>
+									<input type="text" name="floor_width" class="form-control"></input>
+								</div>
 
+								<div class="form-group">
+									<h4><small>Node Type:</small></h4>
+									<select class="form-control" name="type">
+										<option value="qrcode">QRCode</option>
+									  	<option value="stairs">Stairs</option>
+									  	<option value="elevator">Elevator</option>
+									</select>
+									<h4><small>Node description:</small></h4>
+									<input type="text" name="description" class="form-control"></input>
+
+									<div class="col-xs-2">
+										<h4><small>X Coordinate:</small></h4>
+										<input type="text" name="x_pos" class="form-control"></input>
+									</div>
+									<div class="col-xs-2">
+										<h4><small>Y Coordinate:</small></h4>
+										<input type="text" name="y_pos" class="form-control"></input>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary">Add Node</button>
+									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addnode">Cancel</button>
+								</div>
+
+								<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+							</form>
+						</div>
+						<!-- /.col-md-10 col-md-offset-1 -->
 					</div>
 					<!-- /.collapse id=addnode -->
 				</div>
