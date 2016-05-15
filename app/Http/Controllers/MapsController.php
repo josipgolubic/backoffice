@@ -43,6 +43,7 @@ class MapsController extends Controller {
 		$map->version = $request->version;
 		$map->hash = $request->_token;
 
+		$map->save();
 		//$map->save($request->all());
 
 		return back();

@@ -108,7 +108,7 @@
 										<h4><small><strong>Start Node:</strong></small></h4>
 										<select class="form-control" name="start_node">
 											@foreach ($map->nodes as $node)
-												<option value="{{ $node->id }}">{{ $node->start_node }}</option>
+												<option value="{{ $node->id }}">{{ $node->description }}</option>
 											@endforeach	
 										</select>
 									</div>
@@ -117,7 +117,7 @@
 										<h4><small><strong>End Node:</strong></small></h4>
 										<select class="form-control" name="end_node">
 											@foreach ($map->nodes as $node)
-												<option value="{{ $node->id }}">{{ $node->end_node }}</option>
+												<option value="{{ $node->id }}">{{ $node->description }}</option>
 											@endforeach	
 										</select>
 									</div>
