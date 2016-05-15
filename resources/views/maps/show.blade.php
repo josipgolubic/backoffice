@@ -25,7 +25,7 @@
 
 					@endif 
 
-					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addnode">Add New Node</button>
+					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addnode"><strong>Add New Node</strong></button>
 				  	<div id="addnode" class="collapse">
 				  		<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Node</h3>
@@ -85,8 +85,8 @@
 								</div>
 								
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary">Add Node</button>
-									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addnode">Cancel</button>
+									<button type="submit" class="btn btn-primary"><strong>Add Node</strong></button>
+									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addnode"><strong>Cancel</strong></button>
 								</div>
 
 								<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -101,19 +101,19 @@
 				<hr>
 
 				<div class="panel-body">
-					<a class="btn btn-warning btn-block" href="edit/{{ $map->id }}">Edit</a>
+					<a class="btn btn-info btn-block" href="edit/{{ $map->id }}"><strong>Edit</strong></a>
 
 					<hr>
 
 					<form method="POST" action="../deletemap/{{ $map->id }}">
 					    <input type="hidden" name="_method" value="DELETE">
-						<button type="submit" class="btn btn-danger btn-block">Delete</button>
+						<button type="submit" class="btn btn-danger btn-block"><strong>Delete</strong></button>
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 					</form>
 
 					<hr>
 
-					<a class="btn btn-default btn-block" href="{{ url('/maps') }}">Go Back</a>
+					<a class="btn btn-default btn-block" href="{{ url('/maps') }}"><strong>Go Back</strong></a>
 				</div>
 				<!-- /.panel-body -->
 			</div>

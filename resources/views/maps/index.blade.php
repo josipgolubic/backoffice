@@ -15,7 +15,7 @@
 	    				</ul>
 					@endforeach
 				
-					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
+					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap"><strong>Add New Map</strong></button>
 	  				<div id="addmap" class="collapse">
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
@@ -32,8 +32,8 @@
 								</div>
 
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary">Add Map</button>
-									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addmap">Cancel</button>
+									<button type="submit" class="btn btn-primary"><strong>Add Map</strong></button>
+									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addmap"><strong>Cancel</strong></button>
 								</div>
 
 								<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
