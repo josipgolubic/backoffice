@@ -39,20 +39,6 @@ class NodesController extends Controller {
 	{
 		$map = Map::find($request->map_id);
 
-		/*$node = new Node;
-
-		$node->description = $request->description;
-		$node->x_pos = $request->x_pos;
-		$node->y_pos = $request->y_pos;
-		$node->type = $request->type;
-		$node->building_description = $request->building_description;
-		$node->floor_level = $request->floor_level;
-		$node->floor_description = $request->floor_description;
-		$node->floor_length = $request->floor_length;
-		$node->floor_width = $request->floor_width;
-
-		$map->nodes()->save($node);*/
-
 		$map->nodes()->create($request->all());
 
 		return back();

@@ -38,12 +38,12 @@ class MapsController extends Controller {
 	public function store(Request $request)
 	{
 		$map = new Map;
-
+/*
 		$map->description = $request->description;
 		$map->version = $request->version;
 		$map->hash = $request->_token;
-
-		$map->save();
+*/
+		$map->save($request->all());
 
 		return back();
 	}
