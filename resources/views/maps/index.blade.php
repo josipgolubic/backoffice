@@ -18,7 +18,7 @@
 				<!-- /.panel-body -->
 
 				<div class="panel-body">
-					<button type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
+					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
 	  				<div id="addmap" class="collapse">
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
@@ -26,12 +26,12 @@
 							<form method="POST" action="/map/add">
 								<div class="form-group">
 									<h4><small>Map description:</small></h4>
-									<input type="text" name="mapDescription" class="form-control"></input>
+									<input type="text" name="map_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
 									<h4><small>Map version:</small></h4>
-									<input type="text" name="mapVersion" class="form-control"></input>
+									<input type="text" name="map_version" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
