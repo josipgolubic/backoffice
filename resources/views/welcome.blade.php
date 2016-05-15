@@ -18,10 +18,10 @@
 	                        <hr class="intro-divider">
 	                        <ul class="list-inline intro-social-buttons">
 	                            <li>
-	                                <a href="{{ url('/maps') }}" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Maps</span></a>
+	                                <a href="{{ url('/maps') }}" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"><strong>Maps</strong></span></a>
 	                            </li>
 	                            <li>
-	                                <a href="{{ url('/auth/login') }}" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Login</span></a>
+	                                <a href="{{ url('/auth/login') }}" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name"><strong>Login</strong></span></a>
 	                            </li>
 	                        </ul>
 	                    </div>
