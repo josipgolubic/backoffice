@@ -22,12 +22,12 @@
 
 							<form method="POST" action="/map/add">
 								<div class="form-group">
-									<label for="map_description">Description</label>
+									<h4><small>Description</h4></small>
 									<input type="text" name="map_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<label for="map_version">Version</label>
+									<h4><small>Version</h4></small>
 									<input type="text" name="map_version" class="form-control"></input>
 								</div>
 
