@@ -27,12 +27,7 @@
 						<h5 class="text-danger">There are no nodes available for this map!</h5>
 
 					@endif 
-				</div>
-				<!-- /. panel-body -->
 
-				<hr>
-
-				<div class="panel-body">
 					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addnode">Add New Node</button>
 				  	<div id="addnode" class="collapse">
 				  		<div class="col-md-10 col-md-offset-1">
@@ -65,13 +60,15 @@
 									<h4><small>Node description:</small></h4>
 									<input type="text" name="description" class="form-control"></input>
 
-									<div class="col-xs-2">
-										<h4><small>X Coordinate:</small></h4>
-										<input type="text" name="x_pos" class="form-control"></input>
-									</div>
-									<div class="col-xs-2">
-										<h4><small>Y Coordinate:</small></h4>
-										<input type="text" name="y_pos" class="form-control"></input>
+									<div class="row">
+										<div class="col-xs-2">
+											<h4><small>X Coordinate:</small></h4>
+											<input type="text" name="x_pos" class="form-control"></input>
+										</div>
+										<div class="col-xs-2">
+											<h4><small>Y Coordinate:</small></h4>
+											<input type="text" name="y_pos" class="form-control"></input>
+										</div>
 									</div>
 								</div>
 								
