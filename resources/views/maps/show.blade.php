@@ -35,38 +35,39 @@
 
 							<form method="POST" action="/node/add">
 								<div class="form-group">
-									<h4><small>Building:</small></h4>
+									<label for="building_description">Building Description</label>
 									<input type="text" name="building_description" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Floor Description</small></h4>
-									<input type="text" name="floor_Description" class="form-control"></input>
-									<h4><small>Floor Level</small></h4>
+									<label for="floor_description">Floor Description</label>
+									<input type="text" name="floor_description" class="form-control"></input>
+									<label for="floor_level">Floor Level</label>
 									<input type="text" name="floor_level" class="form-control"></input>
-									<h4><small>Floor Length</small></h4>
+									<label for="floor_length">Floor Length</label>
 									<input type="text" name="floor_length" class="form-control"></input>
-									<h4><small>Floor Width</small></h4>
+									<label for="floor_width">Floor Width</label>
 									<input type="text" name="floor_width" class="form-control"></input>
 								</div>
 
 								<div class="form-group">
-									<h4><small>Node Type:</small></h4>
+									<label for="type">Type</label>
 									<select class="form-control" name="type">
 										<option value="qrcode">QRCode</option>
 									  	<option value="stairs">Stairs</option>
 									  	<option value="elevator">Elevator</option>
 									</select>
-									<h4><small>Node description:</small></h4>
+									<label for="description">Description</label>
 									<input type="text" name="description" class="form-control"></input>
 
-									<div class="row">
+									<label for="coordinates_row">Coordinates</label>
+									<div class="row" id="coordinates_row">
 										<div class="col-xs-2">
-											<h4><small>X Coordinate:</small></h4>
+											<label for="x_pos">X:</label>
 											<input type="text" name="x_pos" class="form-control"></input>
 										</div>
 										<div class="col-xs-2">
-											<h4><small>Y Coordinate:</small></h4>
+											<label for="y_pos">Y:</label>
 											<input type="text" name="y_pos" class="form-control"></input>
 										</div>
 									</div>
