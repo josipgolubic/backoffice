@@ -32,7 +32,7 @@
 								</div>
 
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary">Add Map</button>
+									<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Add Map</button>
 									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addmap">Cancel</button>
 								</div>
 
