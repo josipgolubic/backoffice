@@ -139,7 +139,7 @@
 
 									<div class="form-group">
 										<h4><small><strong>Step Description:</strong></small></h4>
-										<textarea name="description" class="form-control noresize" rows="4" id="comment"></textarea>
+										<textarea name="description" class="form-control" rows="4" id="comment"></textarea>
 									</div>
 									
 									<div class="form-group">
