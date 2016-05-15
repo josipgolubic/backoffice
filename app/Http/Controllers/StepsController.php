@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use App\Map;
+
 class StepsController extends Controller {
 
 	/**
