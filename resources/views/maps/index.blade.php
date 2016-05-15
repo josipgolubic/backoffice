@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Existing Maps</div>
+				<div class="panel-heading"><strong>Existing Maps</strong></div>
 				<div class="panel-body">
 					@foreach ($maps as $map)
 						<ul class="list-inline">

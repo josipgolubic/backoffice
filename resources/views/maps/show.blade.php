@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Map Overview</div>
+				<div class="panel-heading"><strong>Map Overview</strong></div>
 				<div class="panel-body">
 					<h3>Map: <small>{{ $map->description }}</small></h3>
 
@@ -21,7 +21,7 @@
 						</ul>
 
 					@else
-						<h5 class="text-danger">There are no nodes available for this map!</h5>
+						<h5 class="text-danger"><strong>There are no nodes available for this map!</strong></h5>
 
 					@endif 
 
