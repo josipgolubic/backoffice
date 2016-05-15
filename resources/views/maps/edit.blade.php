@@ -19,8 +19,7 @@
 
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary"><strong>Save Changes</strong></button>
-							<a class="btn btn-danger btn-close" href=""
-							<button type="button" class="btn btn-danger btn-close"><strong>Cancel</strong></button>
+							<a class="btn btn-danger btn-close" href="{{ URL::previous() }}"><strong>Cancel</strong></a>
 						</div>
 
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
