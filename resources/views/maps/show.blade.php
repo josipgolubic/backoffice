@@ -9,14 +9,21 @@
 					<h3>Map: <small>{{ $map->description }}</small></h3>
 					<hr>
 					<h5>Map Version: {{ $map->version }}</h5>
-					<h5>Map Nodes:</h5>
-					<ul class="list-group">
-						@foreach ($map->nodes as $node)
-							<li class="list-group-item">{{ $node->description }}</li>
-						@endforeach
-					</ul>
 
-					<a class="btn btn-warning btn-block" href="edit/{{ $map->id }}">Edit</a>
+					@if (count($map->nodes) > 0)
+						<h5>Map Nodes:</h5>
+						<ul class="list-group">
+							@foreach ($map->nodes as $node)
+								<li class="list-group-item">{{ $node->description }}</li>
+							@endforeach
+						</ul>
+
+					@else
+						<h5 class="text-danger">There are no nodes available for this map!</h5>
+
+					@endif 
+
+					<a class="btn btn-info btn-block" href="edit/{{ $map->id }}">Edit</a>
 					<hr>
 					<form method="POST" action="../deletemap/{{ $map->id }}">
 					    <input type="hidden" name="_method" value="DELETE">
@@ -24,7 +31,7 @@
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 					</form>
 					<hr>
-					<a class="btn btn-info btn-block" href="{{ url('/maps') }}">Go Back</a>
+					<a class="btn btn-default btn-block" href="{{ url('/maps') }}">Go Back</a>
 				</div>
 				<!-- /.panel-body -->
 			</div>
