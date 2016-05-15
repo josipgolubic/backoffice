@@ -15,7 +15,7 @@
 	    				</ul>
 					@endforeach
 				
-					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap">Add New Map <span class="glyphicon glyphicon-plus"></span></button>
+					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap">Add New Map</button>
 	  				<div id="addmap" class="collapse">
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>

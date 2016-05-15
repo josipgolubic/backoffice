@@ -6,9 +6,6 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Map Overview</div>
 				<div class="panel-body">
-
-					<hr>
-
 					<h3>Map: <small>{{ $map->description }}</small></h3>
 
 					<hr>
@@ -28,7 +25,7 @@
 
 					@endif 
 
-					<button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#addnode">Add New Node</button>
+					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addnode">Add New Node</button>
 				  	<div id="addnode" class="collapse">
 				  		<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Node</h3>
@@ -104,7 +101,7 @@
 				<hr>
 
 				<div class="panel-body">
-					<a class="btn btn-info btn-block" href="edit/{{ $map->id }}">Edit</a>
+					<a class="btn btn-warning btn-block" href="edit/{{ $map->id }}">Edit</a>
 
 					<hr>
 
