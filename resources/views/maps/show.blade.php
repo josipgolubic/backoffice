@@ -129,17 +129,17 @@
 
 									<div class="form-group">
 										<h4><small><strong>Step Order:</strong></small></h4>
-										<input type="text" name="step_order" class="form-control"></input>
+										<input type="text" name="order" class="form-control"></input>
 									</div>
 
 									<div class="form-group">
 										<h4><small><strong>Step Image:</strong></small></h4>
-										<input type="text" name="step_image" class="form-control" disabled></input>
+										<input type="text" name="image" class="form-control" disabled></input>
 									</div>
 
 									<div class="form-group">
 										<h4><small><strong>Step Description:</strong></small></h4>
-										<input type="text" name="step_description" class="form-control"></input>
+										<textarea name="description" class="form-control" rows="4" id="comment" ></textarea>
 									</div>
 									
 									<div class="form-group">
