@@ -4,6 +4,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Map extends Model {
 
+	protected $guarded = ['id', 'hash', 'created_at', 'updated_at'];
+
 	public function nodes()
 	{
 		return $this->hasMany('App\Node');

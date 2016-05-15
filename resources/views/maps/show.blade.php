@@ -8,10 +8,9 @@
 				<div class="panel-body">
 					<h2>Map: {{ $map->description }}</h2>
 					<h3>Map Version: {{ $map->version }}</h3>
-					<h3>Map Nodes:</h3>
-					<ul>
+					<ul class="list-group">
 						@foreach ($map->nodes as $node)
-							<li>{{ $node->description }}</li>
+							<li class="list-group-item">{{ $node->description }}</li>
 						@endforeach
 					</ul>
 					<a class="btn btn-warning btn-block" href="edit/{{ $map->id }}">Edit</a>
