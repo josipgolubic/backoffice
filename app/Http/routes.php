@@ -52,7 +52,7 @@ Route::get('maps/{map}', 'MapsController@show');
 Route::post('maps', 'MapsController@store');
 Route::get('maps/{map}/edit', 'MapsController@edit');
 Route::patch('maps/{map}', 'MapsController@update');
-Route::delete('mapss/{map}', 'MapsController@destroy');
+Route::delete('maps/{map}', 'MapsController@destroy');
 
 Route::post('nodes', 'NodesController@store');
 

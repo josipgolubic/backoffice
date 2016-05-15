@@ -99,7 +99,11 @@ class MapsController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$map = Map::find($id);
+
+		$map->delete();
+
+		return back();
 	}
 
 }
