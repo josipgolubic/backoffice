@@ -20,7 +20,7 @@
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
 
-							<form method="POST" action="/map/add">
+							<form method="POST" action="/maps">
 								<div class="form-group">
 									<h4><small><strong>Description</strong></small></h4>
 									<input type="text" name="map_description" class="form-control"></input>

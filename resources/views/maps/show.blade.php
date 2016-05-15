@@ -30,7 +30,7 @@
 				  		<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Node</h3>
 
-							<form method="POST" action="/node/add">
+							<form method="POST" action="/nodes">
 								<div class="form-group">
 									<h4><small><strong>Building Description</strong></small></h4>
 									<input type="text" name="building_description" class="form-control"></input>
@@ -89,6 +89,7 @@
 									<button type="button" class="btn btn-danger btn-close" data-toggle="collapse" data-target="#addnode"><strong>Cancel</strong></button>
 								</div>
 
+								<input type="hidden" name="map_id" value="{{ $map->id }}"></input>
 								<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 							</form>
 						</div>

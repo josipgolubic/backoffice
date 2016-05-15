@@ -5,6 +5,9 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use App\Map;
+use App\Node;
+
 class NodesController extends Controller {
 
 	/**
@@ -32,9 +35,25 @@ class NodesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$map = Map::find($request->map_id);
+
+		$node = new Node;
+
+		$node->description = $request->description;
+		$node->x_pos = $request->x_pos;
+		$node->y_pos = $request->y_pos;
+		$node->type = $request->type;
+		$node->building_description = $request->building_description;
+		$node->floor_level = $request->floor_level;
+		$node->floor_description = $request->floor_description;
+		$node->floor_length = $request->floor_length;
+		$node->floor_width = $request->floor_width;
+
+		$map->nodes()->save($node);
+
+		return back();
 	}
 
 	/**
