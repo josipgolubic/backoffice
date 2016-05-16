@@ -103,7 +103,7 @@ class MapsController extends Controller {
 
 		$map->delete();
 
-		return back();
+		return redirect('/maps');
 	}
 
 }

@@ -67,5 +67,5 @@
 			<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 		</form>
 	</div>
-	<!-- /.col-md-10 col-md-offset-1 -->
+	<!-- /.col-md-8 col-md-offset-2 -->
 @stop

@@ -30,7 +30,7 @@
 			</div>
 			<!-- /.panel panel-default -->
 		</div>
-		<!-- /.col-md-10 col-md-offset-1 (outer) -->
+		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
 	<!-- /.row -->
 @stop

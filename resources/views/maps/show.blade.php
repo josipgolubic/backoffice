@@ -16,7 +16,7 @@
 						<h5>Map Nodes:</h5>
 						<ul class="list-group">
 							@foreach ($map->nodes as $node)
-								<li class="list-group-item">{{ $node->description }}</li>
+								<a class="list-group-item" href="/nodes{{ $node->id }}">{{ $node->description }}</a>
 							@endforeach
 						</ul>
 
@@ -35,6 +35,15 @@
 									<h4><small><strong>Description</strong></strong></small></h4>
 									<input type="text" name="description" class="form-control"></input>
 								</div>
+
+								<div class="form-group">
+									<h4><small><strong>Type</strong></strong></small></h4>
+									<select class="form-control" name="type">
+										<option value="qrcode">QRCode</option>
+									  	<option value="stairs">Stairs</option>
+									  	<option value="elevator">Elevator</option>
+									</select>
+								</div>						
 
 								<div class="form-group">
 									<h4><small><strong>Building Description</strong></strong></small></h4>
@@ -59,15 +68,6 @@
 								<div class="form-group">
 									<h4><small><strong>Floor Width</strong></strong></small></h4>
 									<input type="text" name="floor_width" class="form-control"></input>
-								</div>
-
-								<div class="form-group">
-									<h4><small><strong>Type</strong></strong></small></h4>
-									<select class="form-control" name="type">
-										<option value="qrcode">QRCode</option>
-									  	<option value="stairs">Stairs</option>
-									  	<option value="elevator">Elevator</option>
-									</select>
 								</div>
 
 								<div class="form-group">
@@ -189,7 +189,7 @@
 			</div>
 			<!-- /.panel panel-default -->
 		</div>
-		<!-- /.col-md-10 col-md-offset-1 (outer) -->
+		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
 	<!-- /.row -->	
 @stop
