@@ -27,3 +27,4 @@
 		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
 	<!-- /.row -->						
+@stop
