@@ -16,7 +16,7 @@
 						<h5>Map Nodes:</h5>
 						<ul class="list-group">
 							@foreach ($map->nodes as $node)
-								<a class="list-group-item" href="/nodes{{ $node->id }}">{{ $node->description }}</a>
+								<a class="list-group-item" href="/nodes/{{ $node->id }}">{{ $node->description }}</a>
 							@endforeach
 						</ul>
 
