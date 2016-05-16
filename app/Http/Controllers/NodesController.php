@@ -52,7 +52,9 @@ class NodesController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$node = Node::find($id);
+
+		return view('nodes.show', compact('node'));
 	}
 
 	/**
