@@ -20,7 +20,7 @@ class DBController extends Controller {
 
 		$data = '{"maps": ' . $maps . "," . '"nodes": ' . $nodes . "," . '"steps": ' . $steps . '}';
 
-	    return $data;//view('database', compact('data'));
+	    return view('database', compact('data'));
 	}
 
 }
