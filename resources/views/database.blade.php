@@ -1,7 +1,5 @@
-@extends('layout')
+@extends('data_layout')
 
 @section('content')
-	@foreach ($users as $user)
-    	<p>This is user {{ $user->name }}</p>
-	@endforeach
+	<p>{{ $data }}</p>
 @stop

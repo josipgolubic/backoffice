@@ -37,7 +37,7 @@
 
 					<hr>
 
-					<a class="btn btn-default btn-block" href="{{ URL::previous() }}"><strong>Go Back</strong></a>
+					<a class="btn btn-default btn-block" href="/maps/{{ $node->map_id }}"><strong>Go Back</strong></a>
 				</div>
 				<!-- /.panel-body -->
 			</div>

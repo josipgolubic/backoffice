@@ -183,7 +183,7 @@
 
 					<hr>
 
-					<a class="btn btn-default btn-block" href="{{ URL::previous() }}"><strong>Go Back</strong></a>
+					<a class="btn btn-default btn-block" href="/maps"><strong>Go Back</strong></a>
 				</div>
 				<!-- /.panel-body -->
 			</div>
