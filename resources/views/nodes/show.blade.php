@@ -10,15 +10,34 @@
 
 					<hr>
 
-					<h5>Node ID: {{ $node->id }}</h5>
-					<h5>Description: {{ $node->description }}</h5>
-					<h5>Type: {{ $node->type }}</h5>
-					<h5>Building Description {{ $node->building_description }}</h5>
-					<h5>Floor Description {{ $node->floor_description }}</h5>
-					<h5>Floor Level {{ $node->floor_level }}</h5>
-					<h5>Floor Length {{ $node->floor_length }}</h5>
-					<h5>Floor Width {{ $node->floor_width }}</h5>
-					<h5>Coordinates: <small>X: {{ $node->x_pos }} Y: {{ $node->y_pos }}</small></h5>
+					<h5><strong>Node ID:</strong> {{ $node->id }}</h5>
+					<h5><strong>Description:</strong> {{ $node->description }}</h5>
+					<h5><strong>Type:</strong> {{ $node->type }}</h5>
+					<h5><strong>Building Description:</strong> {{ $node->building_description }}</h5>
+					<h5><strong>Floor Description:</strong> {{ $node->floor_description }}</h5>
+					<h5><strong>Floor Level:</strong> {{ $node->floor_level }}</h5>
+					<h5><strong>Floor Length:</strong> {{ $node->floor_length }}</h5>
+					<h5><strong>Floor Width:</strong> {{ $node->floor_width }}</h5>
+					<h5><strong>Coordinates:</strong> <small>X:{{ $node->x_pos }}  Y:{{ $node->y_pos }}</small></h5>
+				</div>
+				<!-- /.panel-body -->
+
+				<hr>
+
+				<div class="panel-body">
+					<a class="btn btn-info btn-block" href="/nodes/{{ $node->id }}/edit"><strong>Edit</strong></a>
+
+					<hr>
+
+					<form method="POST" action="/nodes/{{ $node->id }}">
+					    <input type="hidden" name="_method" value="DELETE">
+						<button type="submit" class="btn btn-danger btn-block"><strong>Delete</strong></button>
+						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+					</form>
+
+					<hr>
+
+					<a class="btn btn-default btn-block" href="{{ URL::previous() }}"><strong>Go Back</strong></a>
 				</div>
 				<!-- /.panel-body -->
 			</div>

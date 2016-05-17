@@ -6,11 +6,11 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><strong>Map Overview</strong></div>
 				<div class="panel-body">
-					<h3>Map: <small>{{ $map->description }}</strong></small></h3>
+					<h3><strong>Map:</strong> <small>{{ $map->description }}</strong></small></h3>
 
 					<hr>
 
-					<h5>Map Version: {{ $map->version }}</h5>
+					<h5><strong>Map Version:</strong> {{ $map->version }}</h5>
 
 					@if (count($map->nodes) > 0)
 						<h5>Map Nodes:</h5>
@@ -39,7 +39,7 @@
 								<div class="form-group">
 									<h4><small><strong>Type</strong></strong></small></h4>
 									<select class="form-control" name="type">
-										<option value="qrcode">QRCode</option>
+										<option value="QRCode">QRCode</option>
 									  	<option value="stairs">Stairs</option>
 									  	<option value="elevator">Elevator</option>
 									</select>
@@ -183,7 +183,7 @@
 
 					<hr>
 
-					<a class="btn btn-default btn-block" href="{{ url('/maps') }}"><strong>Go Back</strong></a>
+					<a class="btn btn-default btn-block" href="{{ URL::previous() }}"><strong>Go Back</strong></a>
 				</div>
 				<!-- /.panel-body -->
 			</div>
