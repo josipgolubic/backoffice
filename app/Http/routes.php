@@ -56,6 +56,9 @@ Route::delete('maps/{map}', 'MapsController@destroy');
 
 Route::get('nodes/{node}', 'NodesController@show');
 Route::post('nodes', 'NodesController@store');
+Route::get('nodes/{node}/edit', 'NodesController@edit');
+Route::patch('nodes/{node}', 'NodesController@update');
+Route::delete('nodes/{node}', 'NodesController@destroy');
 
 Route::post('steps', 'StepsController@store');
 

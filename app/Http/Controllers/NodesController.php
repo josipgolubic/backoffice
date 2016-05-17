@@ -65,7 +65,9 @@ class NodesController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		$node = Node::find($id);
+
+		return view('nodes.edit', compact('node'));
 	}
 
 	/**
@@ -74,9 +76,13 @@ class NodesController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
-		//
+		$node = Node::find($id);
+
+		$node->update($request->all());
+
+		return redirect('/nodes/'.$id);
 	}
 
 	/**
@@ -87,7 +93,12 @@ class NodesController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$node = Node::find($id);
+		$map_id = $node->map_id;
+
+		$node->delete();
+
+		return redirect('/maps/'.$map_id);
 	}
 
 }

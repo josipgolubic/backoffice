@@ -6,14 +6,14 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><strong>Map Overview</strong></div>
 				<div class="panel-body">
-					<h3><strong>Map:</strong> <small>{{ $map->description }}</strong></small></h3>
+					<h3>Map: <small>{{ $map->description }}</strong></small></h3>
 
 					<hr>
 
 					<h5><strong>Map Version:</strong> {{ $map->version }}</h5>
 
 					@if (count($map->nodes) > 0)
-						<h5>Map Nodes:</h5>
+						<h5><strong>Map Nodes:</strong></h5>
 						<ul class="list-group">
 							@foreach ($map->nodes as $node)
 								<a class="list-group-item" href="/nodes/{{ $node->id }}">{{ $node->description }}</a>
