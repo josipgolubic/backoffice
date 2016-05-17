@@ -7,9 +7,10 @@
 				<div class="panel-heading"><strong>Edit Node: {{ $node->description }}</strong></div>
 				<div class="panel-body">	
 					<form method="POST" action="/nodes/{{ $node->id }}">
+						<input type="hidden" name="_method" value="PATCH">
 						<div class="form-group">
 							<h4><small><strong>Description</strong></strong></small></h4>
-							<input type="text" name="description" class="form-control"></input>
+							<input type="text" name="description" class="form-control" value="{{ $node->description }}"></input>
 						</div>
 
 						<div class="form-group">
