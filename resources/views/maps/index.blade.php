@@ -16,7 +16,7 @@
 					@endforeach
 				
 					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap"><strong>Add New Map</strong></button>
-	  				@if (count($errors))
+	  				@if (!count($errors))
 	  					<div id="addmap" class="collapse">
 
 	  				@else
