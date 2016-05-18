@@ -18,6 +18,9 @@
 					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap"><strong>Add New Map</strong></button>
 	  				@if (count($errors))
 	  					<div id="addmap" class="collapse">
+
+	  				@else
+	  					<div id="addmap" class="collapse in">
 	  				@endif
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
@@ -43,9 +46,7 @@
 
 	  					</div>
 	  					<!-- /.col-md-10 col-md-offset-1 (inner) -->
-	  				@if (count($errors))
-						</div>
-					@endif
+					</div>
 					<!-- /.collapse id=addmap -->
 				</div>
 				<!-- /.panel-body -->
