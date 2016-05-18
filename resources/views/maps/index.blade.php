@@ -6,14 +6,14 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><strong>Existing Maps</strong></div>
 				<div class="panel-body">
-					@foreach ($maps as $map)
-						<ul class="list-inline">
+					<ul class="list-group">
+						@foreach ($maps as $map)
 		    				<a href="/maps/{{ $map->id }}" class="list-group-item"> 
 		   					    <h4 class="list-group-item-heading">{{ $map->description }}</h4>
 	   							<p class="list-group-item-text">Version: {{ $map->version }}</p>
 	    					</a>
-	    				</ul>
-					@endforeach
+						@endforeach
+					</ul>
 				
 					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap"><strong>Add New Map</strong></button>
 	  				@if (!count($errors))
@@ -48,14 +48,14 @@
 	  					<!-- /.col-md-10 col-md-offset-1 (inner) -->
 					</div>
 					<!-- /.collapse id=addmap -->
-			@if (count($errors))
-				<h4>There are some errors with the input!</h4>
-				<ul class="list-group">
-					@foreach ($errors->all() as $error)
-						<li class="list-group-item list-group-item-danger">{{ $error }}</li>
-					@endforeach
-				</ul>
-			@endif
+					@if (count($errors))
+						<h4>There are some errors with the input!</h4>
+						<ul class="list-group">
+							@foreach ($errors->all() as $error)
+								<li class="list-group-item list-group-item-danger">{{ $error }}</li>
+							@endforeach
+						</ul>
+					@endif
 				</div>
 				<!-- /.panel-body -->
 			</div>
