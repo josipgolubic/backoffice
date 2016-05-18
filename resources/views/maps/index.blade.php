@@ -43,19 +43,18 @@
 
 								<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 							</form>
-
+							@if (count($errors))
+								<h4>There are some errors with the input!</h4>
+								<ul class="list-group">
+									@foreach ($errors->all() as $error)
+										<li class="list-group-item list-group-item-danger">{{ $error }}</li>
+									@endforeach
+								</ul>
+							@endif
 	  					</div>
 	  					<!-- /.col-md-10 col-md-offset-1 (inner) -->
 					</div>
 					<!-- /.collapse id=addmap -->
-					@if (count($errors))
-						<h4>There are some errors with the input!</h4>
-						<ul class="list-group">
-							@foreach ($errors->all() as $error)
-								<li class="list-group-item list-group-item-danger">{{ $error }}</li>
-							@endforeach
-						</ul>
-					@endif
 				</div>
 				<!-- /.panel-body -->
 			</div>
