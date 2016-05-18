@@ -16,4 +16,9 @@ class Map extends Model {
 		return $this->hasMany('App\Step');
 	}
 
+
+	public function account()
+	{
+		return $this->belongsTo('App\Account');
+	}
 }

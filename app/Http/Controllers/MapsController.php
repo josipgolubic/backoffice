@@ -39,6 +39,11 @@ class MapsController extends Controller {
 	{
 		$map = new Map;
 
+		$this->validate($request, [
+			'description' => 'required',
+			'version' => 'required'
+		]);
+
 		$map->description = $request->description;
 		$map->version = $request->version;
 		$map->hash = $request->_token;

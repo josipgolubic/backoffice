@@ -188,6 +188,7 @@
 				<!-- /.panel-body -->
 			</div>
 			<!-- /.panel panel-default -->
+			{{ var_dump($errors) }}
 		</div>
 		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
