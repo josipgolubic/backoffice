@@ -17,8 +17,8 @@ class Map extends Model {
 	}
 
 
-	public function account()
+	public function user()
 	{
-		return $this->belongsTo('App\Account');
+		return $this->belongsTo('App\User');
 	}
 }
