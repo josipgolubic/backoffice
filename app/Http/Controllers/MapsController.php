@@ -59,6 +59,7 @@ class MapsController extends Controller {
 	{
 		//show(Map $map) for RMB
 		$map = Map::with('nodes')->find($id);
+		return $map;
 
 		return view('maps.show', compact('map'));
 	}
