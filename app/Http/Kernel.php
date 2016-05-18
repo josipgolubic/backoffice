@@ -30,4 +30,20 @@ class Kernel extends HttpKernel {
 		'cors' => 'App\Http\Middleware\CORS',
 	];
 
+	protected $middlewareGroups = [
+    'web' => [
+		'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode',
+		'Illuminate\Cookie\Middleware\EncryptCookies',
+		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
+		'Illuminate\Session\Middleware\StartSession',
+		'Illuminate\View\Middleware\ShareErrorsFromSession',
+		'App\Http\Middleware\VerifyCsrfToken',
+    ],
+
+    'api' => [
+        'throttle:60,1',
+        'auth:api',
+    ],
+];
+
 }

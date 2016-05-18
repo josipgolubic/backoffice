@@ -20,9 +20,15 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+
+Route::group(['middleware' => ['web']], function () {
+    Route::post('maps', 'MapsController@store');
+});
+
+
 Route::get('maps', 'MapsController@index');
 Route::get('maps/{map}', 'MapsController@show');
-Route::post('maps', 'MapsController@store');
+//Route::post('maps', 'MapsController@store');
 Route::get('maps/{map}/edit', 'MapsController@edit');
 Route::patch('maps/{map}', 'MapsController@update');
 Route::delete('maps/{map}', 'MapsController@destroy');
