@@ -23,12 +23,12 @@
 							<form method="POST" action="/maps">
 								<div class="form-group">
 									<h4><small><strong>Description</strong></small></h4>
-									<input type="text" name="description" class="form-control"></input>
+									<input type="text" name="description" class="form-control">{{ old('description') }}</input>
 								</div>
 
 								<div class="form-group">
 									<h4><small><strong>Version</strong></small></h4>
-									<input type="text" name="version" class="form-control"></input>
+									<input type="text" name="version" class="form-control">{{ old('version') }}</input>
 								</div>
 
 								<div class="form-group">
@@ -49,7 +49,7 @@
 			<!-- /.panel panel-default -->
 			@if (count($errors))
 				<ul>
-					@foreach ($errors-all() as $error)
+					@foreach ($errors->all() as $error)
 						<li>{{ $error }}</li>
 					@endforeach
 				</ul>
