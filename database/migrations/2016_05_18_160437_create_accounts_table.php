@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMapsTable extends Migration {
+class CreateAccountsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,12 @@ class CreateMapsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('maps', function(Blueprint $table)
+		Schema::create('accounts', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('account_id')->unsigned()->index();
-			$table->string('version');
-			$table->string('description');
-			$table->string('hash');
+			$table->string('name')->unique();
+			$table->string('email')->unique();
+			$table->string('password', 60);
 			$table->timestamps();
 		});
 	}
@@ -30,7 +29,7 @@ class CreateMapsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('maps');
+		Schema::drop('accounts');
 	}
 
 }
