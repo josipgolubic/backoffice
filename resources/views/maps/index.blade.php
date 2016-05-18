@@ -44,10 +44,11 @@
 								<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 							</form>
 							@if (count($errors))
-								<h4>There are some errors with the input!</h4>
+								<hr>
+								<h4 class="text-danger">There are some errors with the input!</h4>
 								<ul class="list-group">
 									@foreach ($errors->all() as $error)
-										<li class="list-group-item list-group-item-danger">{{ $error }}</li>
+										<li class="list-group-item list-group-item-danger"><strong>{{ $error }}</strong></li>
 									@endforeach
 								</ul>
 							@endif
