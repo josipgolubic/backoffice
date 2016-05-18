@@ -16,19 +16,21 @@
 					@endforeach
 				
 					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addmap"><strong>Add New Map</strong></button>
-	  				<div id="addmap" class="collapse">
+	  				@if (count($errors))
+	  					<div id="addmap" class="collapse">
+	  				@endif
 						<div class="col-md-10 col-md-offset-1">
 							<h3>Add a New Map</h3>
 
 							<form method="POST" action="/maps">
 								<div class="form-group">
 									<h4><small><strong>Description</strong></small></h4>
-									<input type="text" name="description" class="form-control">{{ old('description') }}</input>
+									<input type="text" name="description" class="form-control" value="{{ old('description') }}"></input>
 								</div>
 
 								<div class="form-group">
 									<h4><small><strong>Version</strong></small></h4>
-									<input type="text" name="version" class="form-control">{{ old('version') }}</input>
+									<input type="text" name="version" class="form-control" value="{{ old('version') }}"></input>
 								</div>
 
 								<div class="form-group">
@@ -41,7 +43,9 @@
 
 	  					</div>
 	  					<!-- /.col-md-10 col-md-offset-1 (inner) -->
-					</div>
+	  				@if (count($errors))
+						</div>
+					@endif
 					<!-- /.collapse id=addmap -->
 				</div>
 				<!-- /.panel-body -->
