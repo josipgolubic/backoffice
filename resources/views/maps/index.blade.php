@@ -48,17 +48,18 @@
 	  					<!-- /.col-md-10 col-md-offset-1 (inner) -->
 					</div>
 					<!-- /.collapse id=addmap -->
+			@if (count($errors))
+				<h3>There are some errors with the input!</hr>
+				<ul class="list-group">
+					@foreach ($errors->all() as $error)
+						<li class="list-group-item list-group-item-danger">{{ $error }}</li>
+					@endforeach
+				</ul>
+			@endif
 				</div>
 				<!-- /.panel-body -->
 			</div>
 			<!-- /.panel panel-default -->
-			@if (count($errors))
-				<ul>
-					@foreach ($errors->all() as $error)
-						<li>{{ $error }}</li>
-					@endforeach
-				</ul>
-			@endif
 		</div>
 		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
