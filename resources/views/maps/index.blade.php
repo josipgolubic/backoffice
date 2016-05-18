@@ -47,7 +47,13 @@
 				<!-- /.panel-body -->
 			</div>
 			<!-- /.panel panel-default -->
-			{{ var_dump($errors) }}
+			@if (count($errors))
+				<ul>
+					@foreach ($errors-all() as $error)
+						<li>{{ $error }}</li>
+					@endforeach
+				</ul>
+			@endif
 		</div>
 		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
