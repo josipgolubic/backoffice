@@ -9,6 +9,26 @@ use App\Map;
 
 class MapsController extends Controller {
 
+	/*
+	|--------------------------------------------------------------------------
+	| Maps Controller
+	|--------------------------------------------------------------------------
+	|
+	| This controller renders the overview of existing maps for users logged
+	| in and provides a form to add new maps.
+	|
+	*/
+
+	/**
+	 * Create a new controller instance.
+	 *
+	 * @return void
+	 */
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
