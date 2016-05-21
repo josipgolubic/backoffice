@@ -27,7 +27,7 @@
 
 					<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#addnode"><strong>Add New Node</strong></button>
 				  	<div id="addnode" class="collapse">
-						@include('nodes.show')
+						@include('nodes.index')
 					</div>
 					<!-- /.collapse id=addnode -->
 
