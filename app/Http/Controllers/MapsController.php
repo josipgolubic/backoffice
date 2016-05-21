@@ -127,6 +127,8 @@ class MapsController extends Controller {
 	{
 		$map = Map::find($id);
 
+		$map->deleting();
+
 		$map->delete();
 
 		return redirect('/maps');
