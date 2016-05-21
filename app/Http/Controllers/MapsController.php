@@ -127,7 +127,7 @@ class MapsController extends Controller {
 	public function destroy($id)
 	{
 		$map = Map::find($id);
-
+ 
 		$map->nodes()->delete();
 		$map->steps()->delete();
 
