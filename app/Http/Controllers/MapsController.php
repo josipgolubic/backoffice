@@ -127,8 +127,8 @@ class MapsController extends Controller {
 	{
 		$map = Map::find($id);
 
-		$map->nodes->delete();
-		$map->steps->delete();
+		$map->nodes()->delete();
+		$map->steps()->delete();
 
 		$map->delete();
 
