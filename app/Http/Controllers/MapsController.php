@@ -64,6 +64,7 @@ class MapsController extends Controller {
 			'version' => 'required'
 		]);
 
+		$map->user_id = Auth::user()->id;
 		$map->description = $request->description;
 		$map->version = $request->version;
 		$map->hash = $request->_token;
