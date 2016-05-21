@@ -43,7 +43,7 @@
 			</div>
 			<!-- /.panel panel-default -->
 		</div>
-		<!-- /.col-md-8 col-md-offset-2 (outer)c -->
+		<!-- /.col-md-8 col-md-offset-2 (outer) -->
 	</div>
 	<!-- /.row -->						
 @stop
