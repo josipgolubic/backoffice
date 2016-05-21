@@ -21,13 +21,4 @@ class Map extends Model {
 	{
 		return $this->belongsTo('App\User');
 	}
-
-	protected static function boot() {
-        parent::boot();
-
-        static::deleting(function($map) {
-             $map->nodes()->delete();
-             $map->steps()->delete();
-        });
-    }
 }
