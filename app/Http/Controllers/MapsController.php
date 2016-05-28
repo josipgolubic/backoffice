@@ -38,7 +38,8 @@ class MapsController extends Controller {
 	 */
 	public function index()
 	{
-		$maps = Map::all();
+		//$maps = Map::all();
+		$maps = Map::where('user_id' == Auth::user()->id);
 		return view('maps.index', compact('maps'));
 	}
 
